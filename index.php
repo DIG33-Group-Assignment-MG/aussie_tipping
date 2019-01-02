@@ -17,7 +17,7 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
       <a class="navbar-brand" href="#">Aussie Tipping</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,6 +42,9 @@
               <a class="dropdown-item" href="#">BBL Tipping</a>
             </div>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="API-Test.php">API Test Page</a>
+          </li>
          </ul>
         <button type="button" class="btn btn-primary">Register</button>
         <button type="button" class="btn btn-secondary">Login</button>
@@ -51,7 +54,7 @@
 
     <main role="main" class="container">
    
-    <div>
+    
  
      
 
