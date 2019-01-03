@@ -57,7 +57,80 @@
 
     <p>I will start building navbar items so you can start seeing responses as I build them. Think of it as our own Docs</p>
 
+    <h1>New User</h1>
+<?php
+require 'config.php';
+
+// Check if form has been submitted, then process
+if (isset($_POST['submit'])) {
+
+  // first check all form inputs aren't empty
+  if ( $_POST['real_name'] == "" ||
+       $_POST['user_name'] == "" ||
+       $_POST['password'] == ""  ||
+       $_POST['email'] == ""
+  ){
+    echo "Error. Make sure no fields are left blank.";
+
+  }else{
+
+    // Run SQL query to create new book row
+    $query  = "INSERT INTO Users (name,username,password,email_address)";
+    $query .= " VALUES (";
+    $query .= " '{$_POST['real_name']}','{$_POST['user_name']}','{$_POST['password']}','{$_POST['email']}'";
+    $query .= ")";
     
+    // run the Query
+    $result = mysqli_query($connection, $query);
+    
+    // Check if query result was successful 
+    if ($result) {
+      // Success
+      echo "Success! Your new user has been added.<br>";
+      echo '<a href="API-Test.php">Reload</a>';
+      die();
+
+    } else {
+      // Query Failure
+      die("Database query failed. " . mysqli_error($connection));
+    }
+  }
+
+}
+
+
+
+?>
+<form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
+  <div class="form-group">
+    <div class="col-4">
+        <label for="full name">Full Name</label>
+        <input type="text" class="form-control" name="real_name" placeholder="Full Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-4">
+        <label for="username">User Name</label>
+        <input type="text" class="form-control" name="user_name" placeholder="Username">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-4">
+        <label for="InputPassword">Password</label>
+        <input type="password" class="form-control" name="password" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-4">
+        <label for="InputEmail">Email address</label>
+        <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+  </div>
+  <button type="submit" name="submit"  value="Submit"class="btn btn-primary">Submit</button>
+</form>
+
+  </body>
+</html>
 
     
     </main><!-- /.container -->
