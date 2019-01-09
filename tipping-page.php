@@ -1,4 +1,12 @@
 
+<?php
+/*VIEW MOVIE
+*details of individual movies*/
+
+//links to the config file
+require 'config.php';
+
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -61,96 +69,107 @@
 
 <div class="container">
 
+
 <!-- ROW 1 -->
     <h2>Games</h2>
     <div class="row">
       <article class="col-1 mt-4">
-        <p>Date</p>
+
+<?php
+        //performs a query on the genre and movies tables to select all information
+        $query = "SELECT * ";
+        $query .= "FROM tipping JOIN     ";
+        
+//still yet to fill in the details waiting for database to be built.//
+        $query .= " ORDER BY genre, title";
+        $result = mysqli_query($connection, $query);
+
+        //performs a while loop on the returned data
+        while($row = mysqli_fetch_assoc($result)){
+        
+  
+     
+       echo "<h3 id={$row['date_played']}>";
+?>
+<!--creates nested columns-->
       </article>
-      <div class="row col-10">
-         <div class="col-3 mt-4">
-            <p>Heat<p>
-         </div>   
-         <div class="col-2">
-            </p> <img src="images/heat.png" alt="Heat Icon"></p>
-         </div>
-         <div class="col-3 mt-4">
-            <p>Hurricanes<p>
-         </div>   
-         <div class="col-2">
-            </p> <img src="images/hurricanes.png" alt="Hurricanes Icon"></p>
-         </div>
-      </div>
-      <article class="col-1 mt-4">
-         <p>Venue</p>
+         <div class="row col-10">
+             <div class="col-3 mt-4">
+
+<?php
+
+                   echo "<p>{$row['hometeam']}</p>";
+
+?>
+
+              </div>   
+              <div class="col-2">
+         
+<?php         
+         
+                   echo "<img src=" . $row['icon'] . " alt='team icon'>";   
+     
+?>
+     
+              </div>
+              <div class="col-3 mt-4">
+<?php
+
+                   echo "<p>{$row['awayteam']}</p>";
+            
+?>            
+            
+              </div>   
+              <div class="col-2">
+            
+<?php            
+                   echo "<img src=" . $row['icon'] . " alt='team icon'>";   
+     
+?>     
+              </div>
+            </div>
+          <article class="col-1 mt-4">
+<!--end of nested columns-->      
+<?php
+
+                   echo "<p>{$row['venue']}</p>";
+
+        }       
+?>
       </article>
-    </div><!-- row -->
-  <div class="row">
-      <article class="col-1 mt-4">
-        <p>Date</p>
-      </article>
-      <div class="row col-10">
-         <div class="col-3 mt-4">
-            <p>Heat<p>
-         </div>   
-         <div class="col-2">
-            </p> <img src="images/heat.png" alt="Heat Icon"></p>
-         </div>
-         <div class="col-3 mt-4">
-            <p>Hurricanes<p>
-         </div>   
-         <div class="col-2">
-            </p> <img src="images/hurricanes.png" alt="Hurricanes Icon"></p>
-         </div>
-      </div>
-      <article class="col-1 mt-4">
-         <p>Venue</p>
-      </article>
-    </div><!-- row --><div class="row">
-      <article class="col-1 mt-4">
-        <p>Date</p>
-      </article>
-      <div class="row col-10">
-         <div class="col-3 mt-4">
-            <p>Heat<p>
-         </div>   
-         <div class="col-2">
-            </p> <img src="images/heat.png" alt="Heat Icon"></p>
-         </div>
-         <div class="col-3 mt-4">
-            <p>Hurricanes<p>
-         </div>   
-         <div class="col-2">
-            </p> <img src="images/hurricanes.png" alt="Hurricanes Icon"></p>
-         </div>
-      </div>
-      <article class="col-1 mt-4">
-         <p>Venue</p>
-      </article>
-    </div><!-- row --><div class="row">
-      <article class="col-1 mt-4">
-        <p>Date</p>
-      </article>
-      <div class="row col-10">
-         <div class="col-3 mt-4">
-            <p>Heat<p>
-         </div>   
-         <div class="col-2">
-            </p> <img src="images/heat.png" alt="Heat Icon"></p>
-         </div>
-         <div class="col-3 mt-4">
-            <p>Hurricanes<p>
-         </div>   
-         <div class="col-2">
-            </p> <img src="images/hurricanes.png" alt="Hurricanes Icon"></p>
-         </div>
-      </div>
-      <article class="col-1 mt-4">
-         <p>Venue</p>
-      </article>
+    </div><!-- row -->   
+      
+     
+<?php>     
+      
+      
+      
+      
+      
+      
+      
+      
+  
+        //Tests if there was a query error
+        if (!$result) {
+        die("Database query failed.");
+        }
+      
+
+        //releases returned data
+        mysqli_free_result($result);
+      
+        //closes database connection
+        mysqli_close($connection);
+      
+?>git
+
+<!-- ROW 1 -->
+    
     </div><!-- row --></div><!-- container -->
 </html>
-
+<p>I have tried this code out on a different database with information in it,
+and it seems to work. I still haven't added the form element that they click on to chose a winner. I am having real problems pushing this to git</p>
     
     </main><!-- /.container -->
 

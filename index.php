@@ -33,6 +33,9 @@
             <a class="nav-link" href="#">About Us</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="tipping-page.php">Tipping</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#">Contact Us</a>
           </li>
           <li class="nav-item dropdown">

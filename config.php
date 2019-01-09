@@ -12,10 +12,10 @@ error_reporting(E_ALL);
 
 
 // MySQL database settings
-$dbhost = "127.0.0.1";
-$dbuser = "michaeldavidsond";
+$dbhost = "localhost";
+$dbuser = "grahamclements";
 $dbpass = "";
-$dbname = "Aussie_Tipping";
+$dbname = "movies";
 
 
  
