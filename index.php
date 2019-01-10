@@ -1,3 +1,9 @@
+<?php 
+
+session_start();
+$_SESSION['user'] = 'guest';
+?>
+
 <!doctype html>
 
 <html lang="en">
@@ -54,7 +60,15 @@
     </nav>
 
     <main role="main" class="container">
-   
+    </br>
+    </br>
+    
+    
+    <?php
+    print_r($_SESSION);
+    $username = $_SESSION['user'];
+    echo $username;
+    ?>
     
  
      

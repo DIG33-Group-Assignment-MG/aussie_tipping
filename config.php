@@ -4,7 +4,6 @@
 * configuration variables and settings
 */
 
-require 'functions.php';
 
 // Error reporting
 ini_set('display_errors', 1);
