@@ -41,7 +41,9 @@ $_SESSION['user'] = 'guest';
           <li class="nav-item">
             <a class="nav-link" href="tipping-page.php">Tipping</a>
           </li>
-          <li class="nav-item">
+           <li class="nav-item">
+            <a class="nav-link" href="members-page.php">Members</a>
+          </li><li class="nav-item">
             <a class="nav-link" href="#">Contact Us</a>
           </li>
           <li class="nav-item dropdown">
@@ -56,9 +58,9 @@ $_SESSION['user'] = 'guest';
             <a class="nav-link" href="API-Test.php">API Test Page</a>
           </li>
          </ul>
-        <button type="button" class="btn btn-primary">Register</button>
+        <a href="registration.php" button type="button" class="btn btn-primary">Register</a>
         <button type="button" class="btn btn-secondary">Login</button>
-  
+ 
     </div>
     </nav>
 
