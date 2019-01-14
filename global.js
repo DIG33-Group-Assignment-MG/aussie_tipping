@@ -1,3 +1,6 @@
+//Jquery for the AJax call for the registration form 
+//it will take all of the content from the Form Action "register" and submit it the the API
+//register.php
 $('#register').on('submit',function(){
     console.log("you clicked the button");
     var registration = $(this),
@@ -13,18 +16,19 @@ $('#register').on('submit',function(){
         type:'post',
         data:formContent,
         success:function(data){
+            //if register returns success=true then an alert will show and then the site will direct the user
+            //to their member page
             if(data.success)
             {
-                //hide submit button
-                $('#registration_header').remove();
-                $('#register').remove();
-                $('#submit').remove();
-                //unhide the navigate button
-                $('#navigate').css('visibility','visible');
-              
-                alert('Welcome aboard ' + data.username)
-            }
             
+                alert('Welcome aboard ' + data.username)
+                //Redirect them to their member page
+                window.location.href = 'Member.php?id='+data.userid;
+                
+                
+            }
+            //at the moment if it fails. it will alert the user that nothing has happened 
+            //and include the reason as described in register.php (eg user already exists)
             else if(!data.success)
             {
                 alert('Nothing Happened :(' + data.reason);
@@ -36,11 +40,10 @@ $('#register').on('submit',function(){
         
 });
 
-$('#navigate').click(function(){
-    console.log("You clicked the navigate button");
-});
 
-
+//Jquery for the AJax call for the registration of a competition form 
+//it will take all of the content from the Form Action "register_comp" and submit it the the API
+//create_comp.php
 
 
 $('#register_comp').on('submit',function(){
@@ -59,9 +62,9 @@ $('#register_comp').on('submit',function(){
         success:function(data){
             if(data.success)
             {
-                //hide submit button
-                //unhide the navigate button
+                //alert the user that the comp has been created
                 alert('Congratulations ' + data.compname + ' is ready to go!');
+                
             }
             
             else if(!data.success)
@@ -73,7 +76,6 @@ $('#register_comp').on('submit',function(){
                 {
                     $('#competition_name').removeClass('form-control');
                     $('#competition_name').addClass('form-control is-invalid');
-                   
                     $('<div class="invalid-feedback">This Competition Name exists - Try Again</div>').insertAfter('#competition_name');
                      
                 }
@@ -84,3 +86,38 @@ $('#register_comp').on('submit',function(){
         
         return false;
 });
+
+
+$('#login_user').on('submit',function(){
+    
+    console.log("you clicked the create a comp button");
+    var login_form=$(this),
+        loginContent=login_form.serialize();
+        console.log("here is data from the submit_comp form");
+        console.log(loginContent);
+        
+         $.ajax({
+        url:'/APIs/login_user.php',
+        dataType:'json',
+        type:'post',
+        data:loginContent,
+        success:function(data){
+            if(data.success)
+            {
+                alert('Welcome back ' + data.username)
+                //Redirect them to their member page
+                window.location.href = 'Member.php?id='+data.userid;
+            }
+            
+            else if(!data.success)
+            {
+                alert('Sorry ' + data.reason)
+            }
+        }
+    });
+        
+        
+        return false;
+});
+
+

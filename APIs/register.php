@@ -74,6 +74,7 @@ $json = array(
       $query .= " VALUES (";
       $query .= " NULL,'$fullname','$password','$username','$email'";
       $query .= ")";
+     
       
       
       //run the query
@@ -87,10 +88,19 @@ $json = array(
         $json['success'] = true;
         $json['reason'] = 'the information has been added to the database';
         $json['username'] = $username;
-        $_SESSION['user'] = $username;
+       
+        
+        $IDquery = "SELECT MAX(user_id) as user_id ";
+        $IDquery .="FROM Users";
+        $result = mysqli_query($connection, $IDquery);
+        
+        $row = mysqli_fetch_assoc($result);
+        
+        $json['userid'] = $row['user_id'];
+        $_SESSION['userid'] = $row['user_id'];
+         $_SESSION['user'] = $username;
         
         
-      
         //no result returned
         }  
         else if(!$result)

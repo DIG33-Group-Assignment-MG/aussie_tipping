@@ -1,18 +1,26 @@
-<?php 
-//when a person enters our site index.php is where they will enter so here we, will do the following:
-//for now I will destroy all previous sessions if a user goes to the index page. I am trying to find a way to "log out"
+<!-- This page will be used to log an existing user in
+
+it will take a username & a password and it will check on the database using a function?
+
+Username and Email both need to be unique
+
+This page will only be accessible to a guest
+
+-->
+
+<?php
+
+//At the top of this page we need to start/resume the session
 session_start();
-session_destroy();
-//$_SESSION['user'] = $_SESSION['user'];
-//$_SESSION['userid'] = $_SESSION['userid'];
-//if this is the first time they have entered the site the $_SESSION['user'] should be void of any value (!isset)
-//run the config script to set up the connection strings etc
+//then we need to use the config.php for access to the DB
 require_once('config.php');
-//then run the functions script
+//then we will access the functions file
 require_once('functions.php');
 
 ?>
 
+<!-- Page content -->
+<!-- Navbar only needs basic content -->
 <!doctype html>
 
 <html lang="en">
@@ -53,42 +61,42 @@ require_once('functions.php');
           <li class="nav-item">
             <a class="nav-link" href="#">Contact Us</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Competitions</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">NRL Tipping</a>
-              <a class="dropdown-item" href="#">AFL Tiiping</a>
-              <a class="dropdown-item" href="#">BBL Tipping</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="API-Test.php">API Test Page</a>
-          </li>
-         </ul>
-          <a href='registration.php'><button type='button' class='btn btn-primary' id='register_button'>Register</button></a>
-          <a href='login.php'><button type='button' class='btn btn-secondary' id='login_button'>Login</button></a>
-        
-        
+        </ul>
+        </div>
+        </nav>
+        </body>
+        </br>
+        </br>
+        </br>
+                    <h1 id="registration_header">New User</h1>
+
+<form action="/APIs/login_user.php" method="post" id="login_user">
+  <div class="form-group">
+    <div class="col-4">
+        <label for="username">User Name</label>
+        <input type="text" class="form-control" name="user_name" autocomplete="username" placeholder="Username" >
     </div>
-    </nav>
-
-    <main role="main" class="container">
-    </br>
-    </br>
-    
-    
-   
-    
- 
-     
-
-    </main><!-- /.container -->
-
-    <!-- Bootstrap core JavaScript
+  </div>
+  <div class="form-group">
+    <div class="col-4">
+        <label for="InputPassword">Password</label>
+        <input type="password" class="form-control" name="password" autocomplete="new-password" placeholder="Password" >
+    </div>
+  <button type="submit" name="submit"  class="btn btn-primary" id="submit_login">Submit</button>
+  
+</form>
+     </form>
+        
+        
+           <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+    <script src="global.js"></script>
   </body>
+  
+  
 </html>

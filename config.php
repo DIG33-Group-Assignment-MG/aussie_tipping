@@ -10,13 +10,20 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 
+
 // MySQL database settings
-$dbhost = "localhost";
-$dbuser = "grahamclements";
+//$dbhost = "localhost";
+//Michael DB Config
+$dbhost = "127.0.0.1";
+$dbuser = "michaeldavidsond";
 $dbpass = "";
-$dbname = "movies";
+$dbname = "Aussie_Tipping";
 
-
+//Grahams DB Config
+//$dbhost = "localhost";
+//$dbuser = "michaeldavidsond";
+//$dbpass = "";
+//$dbname = "Aussie_Tipping";
  
 
 // MySQL connection
@@ -28,6 +35,9 @@ if(mysqli_connect_errno()) {
   die("Database connection failed: " . mysqli_connect_error() ." (" . mysqli_connect_errno() . ")"
   );
 }
+
+
+
 
 
 

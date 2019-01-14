@@ -1,7 +1,7 @@
 <?php
 
 //this file contains functions for the website
-include 'config.php';
+require_once('config.php');
 
 function checkUserName($username,$connection)
 {
@@ -66,17 +66,35 @@ function getListOfCompetitions($connection)
 	
 	while($row = mysqli_fetch_assoc($result))
 	{
-	$optionNumber = 1;	
-	echo "<option value='$optionNumber'>{$row["competition_name"]}</option>";
-	$optionNumber +=1;
+		$optionNumber = 1;	
+		echo "<option value='$optionNumber'>{$row["competition_name"]}</option>";
+		$optionNumber +=1;
 	}
 
 }
 
-function getUserName()
+function getUserName($userid,$connection)
 {
-	 echo "<h3 id='session'>{$_SESSION["user"]}</h3>";
+	 $query = "SELECT * ";
+	 $query .=" FROM Users ";
+	 $query .="WHERE user_id='$userid'";
+	
+	
+	$result = mysqli_query($connection,$query);
+    $row = mysqli_fetch_assoc($result);
+    
+    //Check results for errors
+    if(!$result)
+    {
+        die("Database query failed.");
+    }
+    else
+    {
+        return $row['username'];
+    }
 }
+
+
 
 
 ?>

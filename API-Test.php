@@ -1,8 +1,12 @@
 <?php
+//API-Test is a playground for me to build our data links without breaking any of your design work
 session_start();
+//$_SESSION['user'] = $_SESSION['user'];
+//$_SESSION['userid'] = $_SESSION['userid'];
+//run the config script to set up the connection strings etc
+require_once('config.php');
+//then run the functions script
 require_once('functions.php');
-
-
 
 
 ?>
@@ -34,17 +38,13 @@ require_once('functions.php');
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-<<<<<<< HEAD
-            <a class="nav-link" href="#registration_header">User APIs <span class="sr-only">(current)</span></a>
-=======
-            <a class="nav-link" href="#">Tipping <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
+
+            
             <a class="nav-link" href="#">User APIs</a>
->>>>>>> 86fd0e7eadd93087c90af5a4394ae209c5f7c57b
+
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#tipping_comp_header">Create a Tipping Competition APIs</a>
+            <a class="nav-link" href="#tipping_comp_header">Competition APIs</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Sport APIs</a>
@@ -55,9 +55,24 @@ require_once('functions.php');
           <li class="nav-item">
             <a class="nav-link" href="phpmyadmin" target="_blank">phpMyAdmin</a>
           </li>
-         </ul>
-        <button type="button" class="btn btn-primary">Register</button>
-        <button type="button" class="btn btn-secondary">Login</button>
+          </ul>
+        <?php
+        //when loading the nav bar, if the user has not logged in yet, then provide them with the login and register buttons
+        if(!isset($_SESSION['user']))
+        {
+          echo "<a href='registration.php'><button type='button' class='btn btn-primary' id='register_button'>Register</button></a>";
+          echo "<a href='login.php><button type='button' class='btn btn-secondary' id='login_button'>Login</button></a>";
+        }
+        //if they have logged in then welcome them with their username and make it a link to theier members dashboard
+        else
+        {
+          echo "<a class='nav-link' href='Member.php?id={$_SESSION['userid']}' id='user_link'>Welcome {$_SESSION['user']}</a>";
+          echo "<button type='button' class='btn btn-secondary' id='log_out_button'>Log Out</button>";
+        }
+        ?>
+         
+                     
+        
   
     </div>
     </nav>
@@ -74,9 +89,10 @@ require_once('functions.php');
     <p>There will be not real styling to start with as I am still just getting a handle on the information side of things</p>
 
     <p>I will start building navbar items so you can start seeing responses as I build them. Think of it as our own Docs</p>
+
+
+
 <!--Registration Form -->
-    
-    
     <h1 id="registration_header">New User</h1>
 
 <form action="/APIs/register.php" method="post" id="register">
@@ -108,9 +124,7 @@ require_once('functions.php');
   
 </form>
       <a href="index.php" class="btn btn-success" role="button" id="navigate">Successful</button></a>
-  </body>
-</html>
-
+  
 
 <!-- Tipping competition Creator -->
 
@@ -142,27 +156,28 @@ require_once('functions.php');
 
 </br>
 </br>
+
+<!-- Join a tipping Competition -->
+
 <h2 id="join_header">Join A Tipping Competition</h2>
 <p>Use this section to join a Tipping Competition</p>
 <form action="/APIs/join_comp.php" method="post" id="join_tipping_comp">
     <div class="form-group">
     <div class="col-4">
-    <label for="sport">Select a Competition</label>
-    <select class="form-control" name="tipping_comp_name" id="tipping_comp_selection">
+    <label for="tipping_name">Select a Competition</label>
+    <select class="form-control" name="tipping_comp_name" id="tipping_comp_selection" placeholder="Pick A Competition to Join">
       <?php getListOfCompetitions($connection) ?>
     </select>
-  <button type="submit"  name="submit" class="btn btn-primary" id="join_comp">Create your competition</button>
+    </div>
+  </div>
+  <button type="submit"  name="submit" class="btn btn-primary" id="join_comp">Join Tipping Competition</button>
   </br>
   </br>
   
   
-  
+<!-- Session information -->  
   <h1>Session Information</h1>
-  <?php
-    print_r($_SESSION);
-    $_SESSION['user']='testUser';
-    print_r($_SESSION);
-    ?>
+  
     </main><!-- /.container -->
     
     <!-- Bootstrap core JavaScript

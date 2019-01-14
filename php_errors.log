@@ -1,0 +1,38 @@
+[11-Jan-2019 06:19:17 UTC] PHP Notice:  Use of undefined constant LAST_INSERT_id - assumed 'LAST_INSERT_id' in /home/ubuntu/workspace/APIs/register.php on line 96
+[11-Jan-2019 06:19:17 UTC] PHP Stack trace:
+[11-Jan-2019 06:19:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[11-Jan-2019 06:19:17 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/ubuntu/workspace/APIs/register.php on line 96
+[11-Jan-2019 06:19:17 UTC] PHP Stack trace:
+[11-Jan-2019 06:19:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[11-Jan-2019 06:22:42 UTC] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/ubuntu/workspace/APIs/register.php on line 94
+[11-Jan-2019 06:23:27 UTC] PHP Fatal error:  Call to undefined function LAST_INSERT_id() in /home/ubuntu/workspace/APIs/register.php on line 97
+[11-Jan-2019 06:23:27 UTC] PHP Stack trace:
+[11-Jan-2019 06:23:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[11-Jan-2019 07:12:25 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/ubuntu/workspace/config.php on line 11
+[11-Jan-2019 07:12:25 UTC] PHP Stack trace:
+[11-Jan-2019 07:12:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[11-Jan-2019 07:12:25 UTC] PHP   2. require_once() /home/ubuntu/workspace/APIs/register.php:33
+[11-Jan-2019 07:12:25 UTC] PHP   3. include() /home/ubuntu/workspace/functions.php:4
+[11-Jan-2019 07:12:25 UTC] PHP   4. session_start() /home/ubuntu/workspace/config.php:11
+[11-Jan-2019 07:12:41 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/ubuntu/workspace/config.php on line 11
+[11-Jan-2019 07:12:41 UTC] PHP Stack trace:
+[11-Jan-2019 07:12:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[11-Jan-2019 07:12:41 UTC] PHP   2. require_once() /home/ubuntu/workspace/APIs/register.php:33
+[11-Jan-2019 07:12:41 UTC] PHP   3. include() /home/ubuntu/workspace/functions.php:4
+[11-Jan-2019 07:12:41 UTC] PHP   4. session_start() /home/ubuntu/workspace/config.php:11
+[13-Jan-2019 05:52:09 UTC] PHP Warning:  require_once(config.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/APIs/login_user.php on line 23
+[13-Jan-2019 05:52:09 UTC] PHP Stack trace:
+[13-Jan-2019 05:52:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/login_user.php:0
+[13-Jan-2019 05:52:09 UTC] PHP Fatal error:  require_once(): Failed opening required 'config.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/APIs/login_user.php on line 23
+[13-Jan-2019 05:52:09 UTC] PHP Stack trace:
+[13-Jan-2019 05:52:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/login_user.php:0
+[13-Jan-2019 06:00:31 UTC] PHP Notice:  Undefined index: userid in /home/ubuntu/workspace/APIs/login_user.php on line 56
+[13-Jan-2019 06:00:31 UTC] PHP Stack trace:
+[13-Jan-2019 06:00:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/login_user.php:0
+[13-Jan-2019 07:21:26 UTC] PHP Notice:  Undefined variable: INSERT INTO Tipping_Competition (tipping_competition_id,sport_id,competition_name) VALUES ( NULL,'1','I am the king 2') in /home/ubuntu/workspace/APIs/create_comp.php on line 68
+[13-Jan-2019 07:21:26 UTC] PHP Stack trace:
+[13-Jan-2019 07:21:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/create_comp.php:0
+[13-Jan-2019 07:21:26 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ubuntu/workspace/APIs/create_comp.php on line 68
+[13-Jan-2019 07:21:26 UTC] PHP Stack trace:
+[13-Jan-2019 07:21:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/create_comp.php:0
+[13-Jan-2019 07:21:26 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/create_comp.php:68
