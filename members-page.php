@@ -118,14 +118,14 @@ There will be an accept button and a decline button next to each row  of user
       <?php getCompsForUser($_SESSION['userid'],$connection) ?>
     </select>
     
-   </div>
+  
            <p>If you are not a member of a tipping competition, <a href="#competitions">join or create a competition further down this page.</a></p> 
         </div>
     <div class="col-sm-4 mt-5">
        <a href="tipping-page.php" button type="button" class="btn btn-success btn-lg"><h1>Tipping</h1></a>
      </div>
     </div> 
-    
+    </div>
     
   <div class="container">
     <div class="row">
