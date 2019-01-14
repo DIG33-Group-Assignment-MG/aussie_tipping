@@ -67,16 +67,10 @@ require_once('functions.php');
             <a class="nav-link" href="API-Test.php">API Test Page</a>
           </li>
          </ul>
-<<<<<<< HEAD
+
           <a href='registration.php'><button type='button' class='btn btn-primary' id='register_button'>Register</button></a>
           <a href='login.php'><button type='button' class='btn btn-secondary' id='login_button'>Login</button></a>
-        
-        
-=======
-        <a href="registration.php" button type="button" class="btn btn-primary">Register</a>
-        <button type="button" class="btn btn-secondary">Login</button>
- 
->>>>>>> 5996b0d7add06b86f7f95616e6d6c58edad88dd4
+
     </div>
     </nav>
 

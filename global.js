@@ -106,7 +106,7 @@ $('#login_user').on('submit',function(){
             {
                 alert('Welcome back ' + data.username)
                 //Redirect them to their member page
-                window.location.href = 'Member.php?id='+data.userid;
+                window.location.href = 'members-page.php';
             }
             
             else if(!data.success)
@@ -120,4 +120,9 @@ $('#login_user').on('submit',function(){
         return false;
 });
 
+//need a function that detects a change in the member's select_competition box
 
+$('#select_competition').change(function(){
+    //get the option number which is the tipping comp
+    
+})

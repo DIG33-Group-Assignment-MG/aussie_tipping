@@ -94,7 +94,48 @@ function getUserName($userid,$connection)
     }
 }
 
-
+function getCompsForUser($userid,$connection)
+{
+	
+	
+	
+	// $userCompQuery  ="SELECT Tipping_Competition_Member.user_id,Tipping_Competition_Member.tipping_competition_id,Tipping_Competition.tipping_competition_id,Tipping_Competition.competition_name";
+	// $userCompQuery .=" FROM Tipping_Competition_Member";
+	// $userCompQuery .=" INNER JOIN Tipping_Competition_Member ON Tipping_Competition_Member.tipping_competition_id=Tipping_Competition.tipping_competition_id";
+	// $userCompQuery .=" WHERE Tipping_Competition_Member.user_id = '$userid';";
+	
+	$query = "SELECT DISTINCT Tipping_Competition_Member.user_id,Tipping_Competition_Member.tipping_competition_id,Tipping_Competition.tipping_competition_id,Tipping_Competition.competition_name";
+	$query .=" FROM Tipping_Competition_Member";
+	$query .=" INNER JOIN Tipping_Competition ON Tipping_Competition_Member.tipping_competition_id=Tipping_Competition.tipping_competition_id";
+	$query .=" WHERE Tipping_Competition_Member.user_id = '88';";
+	
+	
+	// echo "<br>";
+	// echo $userCompQuery;
+	// echo "<br>";
+	
+	// echo "<br>";
+	// echo $query;
+	// echo "<br>";
+	
+	
+	$result = mysqli_query($connection,$query);
+	if (!$result)
+	{
+		echo "no result";
+	}
+	else
+	{
+		
+		while($row = mysqli_fetch_assoc($result))
+		{
+			
+		echo "<option value='{$row['tipping_competition_id']}'>{$row["competition_name"]}</option>";
+			
+		}
+	}
+	
+}
 
 
 ?>

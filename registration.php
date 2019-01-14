@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!-- This page will be used to register a user
 
 it will take a name, a username, a password and an email.
@@ -23,18 +22,6 @@ require_once('functions.php');
 <!-- Navbar only needs basic content -->
 <!doctype html>
 
-=======
-<!--created to the prototype stage, css stylising to be done for final assignment stage-->
-<?php
-session_start();
-require_once('functions.php');
-
-
-
-
-?>
-<!doctype html>
->>>>>>> 5996b0d7add06b86f7f95616e6d6c58edad88dd4
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -43,24 +30,11 @@ require_once('functions.php');
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-<<<<<<< HEAD
-    <title>Starter Template for Bootstrap</title>
-=======
     <title>Registration</title>
->>>>>>> 5996b0d7add06b86f7f95616e6d6c58edad88dd4
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Custom styles for this site -->
-<<<<<<< HEAD
-    <link href="/css/styles.css" rel="stylesheet" type="text/css">>
-  </head>
-
-  <body>
-
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#">Aussie Tipping</a>
-=======
     <link href="/css/styles.css" rel="stylesheet" type="text/css">
   </head>
 
@@ -69,82 +43,12 @@ require_once('functions.php');
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container">
      <a class="navbar-brand" href="#">Aussie Tipping</a>
->>>>>>> 5996b0d7add06b86f7f95616e6d6c58edad88dd4
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-<<<<<<< HEAD
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="tipping-page.php">Tipping</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
-        </ul>
-        <a href='login.php'><button type='button' class='btn btn-secondary' id='login_button'>Login</button></a>
-        </div>
-        </nav>
-        </body>
-        </br>
-        </br>
-        </br>
-        
-        
-            <h1 id="registration_header">New User</h1>
-
-<form action="/APIs/register.php" method="post" id="register">
-  <div class="form-group">
-    <div class="col-4">
-        <label for="full name">Full Name</label>
-        <input type="text" class="form-control" name="real_name" autocomplete="name"  placeholder="Full Name">
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-4">
-        <label for="username">User Name</label>
-        <input type="text" class="form-control" name="user_name" autocomplete="username" placeholder="Username" >
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-4">
-        <label for="InputPassword">Password</label>
-        <input type="password" class="form-control" name="password" autocomplete="new-password" placeholder="Password" >
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-4">
-        <label for="InputEmail">Email address</label>
-        <input type="email" class="form-control" name="email" autocomplete="email" aria-describedby="emailHelp" placeholder="Enter email" value="@email.com">
-    </div>
-  </div>
-  <button type="submit" name="submit"  class="btn btn-primary" id="submit">Submit</button>
-  
-</form>
-     </form>
-      <a href="index.php" class="btn btn-success" role="button" id="navigate">Successful</button></a>
-        
-        </br>
-    </br>
-    
-    
-   
-    
- 
-     
-
-    </main><!-- /.container -->
-
-    <!-- Bootstrap core JavaScript
-=======
            <li class="nav-item">
             <a class="nav-link" href="index.php">Home Page</a>
           </li> 
@@ -213,7 +117,6 @@ require_once('functions.php');
 
 
   <!-- Bootstrap core JavaScript
->>>>>>> 5996b0d7add06b86f7f95616e6d6c58edad88dd4
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -224,11 +127,7 @@ require_once('functions.php');
   </body>
   
   
-<<<<<<< HEAD
-</html>
-=======
 </html>
 
 
 
->>>>>>> 5996b0d7add06b86f7f95616e6d6c58edad88dd4

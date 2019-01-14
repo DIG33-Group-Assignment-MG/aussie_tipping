@@ -1,11 +1,56 @@
-<?php
-session_start();
+<?php 
+//session_start();
+require_once('config.php');
 require_once('functions.php');
+session_start();
 
+
+
+/*this will be the member's "Dashboard" and will comprise of the following "pages" as sections from the proposal:
+-Member's page
+-Competition Page
+-Admin Page
+It will be associated to a member so will be accessed using a url "Members?id=<member ID>"
+This member id will be passed from the registration or the login page as a POST and I will use GET to start compiling the user's information.
+
+Things the user will be able to see on this page:
+
+
+
+******Member's Section*******
+-A drop down containing a list of the competitions the member is part of
+When a competition is selected the following information will be provided
+-Number of successful tips they have made for this competition
+-A view of the tips from the previous round and which ones were succesful
+-The next weeks schedule
+-A ladder containing the order of players in the competition selected
+
+
+******Competition Section*****
+Creat a competition - allows the user to create a competition and be the first user added as an admin **Half complete**
+Join A competition - allows a user to select a competition they wish to join, this is meant to put them in a staging table for the admin page to view and accept
+
+
+
+*****Admin Page*************
+For user's that are set as admins for a page eg the creator, this page will allow them to select which users are allowed in the competition
+This page will have a full name box and a username box which are read only and will list the <username> and <full name> and which competition they are wanting to access
+There will be an accept button and a decline button next to each row  of user
+-If the user selects accept, the user that made the request will be added as a member of the competition they were accepted in to and deleted from the staging table
+-If the user is declined from the competition they will be removed from the competition, at the moment they will not be alerted that their request has been rejected or accepted.
+*/
+
+
+//set user id
+//$userid = $_GET['id'];
+//$username = getUserName($userid,$connection);
+//get the user information
 
 
 
 ?>
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -24,64 +69,62 @@ require_once('functions.php');
   </head>
 
   <body>
-
+<!-- Nav Menu -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <div class="container">
-      <a class="navbar-brand" href="#">Aussie Tipping</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <div class="container">
+          <a class="navbar-brand" href="#">Aussie Tipping</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-           <li class="nav-item">
-            <a class="nav-link" href="index.php">Home Page</a>
-          </li><li class="nav-item">
-            <a class="nav-link" href="tipping-page.php" target="_blank">Tipping</a>
-          </li><li class="nav-item">
-            <a class="nav-link" href="members-page.php">Members <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">User APIs</a>
-          </li>
-         
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sport APIs</a>
-          </li>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.php">Home Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tipping-page.php" target="_blank">Tipping</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="members-page.php">Members <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">User APIs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sport APIs</a>
+            </li>
         </ul>
-        <a href="registration.php" button type="button" class="btn btn-primary">Register</a>
-        <button type="button" class="btn btn-secondary">Login</button>
-  
-    </div>
+         <?php echo "<a class='nav-link' href='Member.php?id={$_SESSION['userid']}' id='user_link'>Welcome {$_SESSION['user']}</a>";?>
+      </div>
     </nav>
-</div>
-  <main>
-  <div class="container mt-5">     
-    </br>
-  <!--once logged in the member's name will automatically appear here when the member navigates to this page-->
   
-   <h1 class="text-center">Member's Name</h1>
-   
-  <div class="container">
+<main>
+<!-- Div 1 Should contain the member's page from the proposal-->
+<div class="container mt-5" >
+</br>
+<!--This includes the Member's name-->
+<h1 class="text-center" id="Members_Title">Welcome <?php echo $_SESSION['user']?></h1>
+</br>
+  <div class="container" id="Members_Page">
   <div class="row">
    <div class="col-md-8">
-     <h2 class="text-center">Competition</h2>
-   <!--placeholder for competition-->
-   <div class="form-group">
-
+    <p class="text-center">This is your Members home page. From here you can view a list of all of your tipping competitions</p>
+    <p class="text-center"> as well view a snapshot of your results, the next round's schedule or the current rounds matches</p>
+    </br>
     <label><h4>Select a Competition</h4></label>
+    <!-- here we want a list of competitions the member is enrolled in **Complete**-->
+    <select class="form-control" name="#" id="select_competition" placeholder="Pick A Competition to Join">
+      <?php getCompsForUser($_SESSION['userid'],$connection) ?>
+    </select>
     
-    <select class="form-control" name="#" id="#">
-      <option value="1">Place Holder for Competition</option>
-     </select>
    </div>
-        <p>If you are not a member of a tipping competition, join or create a competition further down this page.</p> 
+           <p>If you are not a member of a tipping competition, <a href="#competitions">join or create a competition further down this page.</a></p> 
         </div>
     <div class="col-sm-4 mt-5">
        <a href="tipping-page.php" button type="button" class="btn btn-success btn-lg"><h1>Tipping</h1></a>
      </div>
-    </div> <!--row -->
-    </div> <!--container -->
+    </div> 
     
     
   <div class="container">
@@ -118,7 +161,7 @@ require_once('functions.php');
 <hr>
   
 <!-- Tipping competition Creator -->
-<div class="container">
+<div class="container" id="competitions">
   <div class="row">
   <div class="col-sm-6 order-2">
   <h2 id="tipping_comp_header">Create Competition</h2>
