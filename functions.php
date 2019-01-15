@@ -107,7 +107,7 @@ function getCompsForUser($userid,$connection)
 	$query = "SELECT DISTINCT Tipping_Competition_Member.user_id,Tipping_Competition_Member.tipping_competition_id,Tipping_Competition.tipping_competition_id,Tipping_Competition.competition_name";
 	$query .=" FROM Tipping_Competition_Member";
 	$query .=" INNER JOIN Tipping_Competition ON Tipping_Competition_Member.tipping_competition_id=Tipping_Competition.tipping_competition_id";
-	$query .=" WHERE Tipping_Competition_Member.user_id = '88';";
+	$query .=" WHERE Tipping_Competition_Member.user_id = '$userid';";
 	
 	
 	// echo "<br>";

@@ -122,7 +122,12 @@ $('#login_user').on('submit',function(){
 
 //need a function that detects a change in the member's select_competition box
 
-$('#select_competition').change(function(){
+$('#select_user_competition').change(function(){
     //get the option number which is the tipping comp
+    var selection = $("#select_user_competition option:selected").val();
+    console.log("Selection changed" + selection);
+    //now that I have the selection I can use Ajax to pull the data from the back end
+    
+    
     
 })

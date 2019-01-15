@@ -95,7 +95,7 @@ There will be an accept button and a decline button next to each row  of user
               <a class="nav-link" href="#">Sport APIs</a>
             </li>
         </ul>
-         <?php echo "<a class='nav-link' href='Member.php?id={$_SESSION['userid']}' id='user_link'>Welcome {$_SESSION['user']}</a>";?>
+         <?php echo "<a class='nav-link' href='members-page.php' id='user_link'>Welcome {$_SESSION['user']}</a>";?>
       </div>
     </nav>
   
@@ -114,7 +114,7 @@ There will be an accept button and a decline button next to each row  of user
     </br>
     <label><h4>Select a Competition</h4></label>
     <!-- here we want a list of competitions the member is enrolled in **Complete**-->
-    <select class="form-control" name="#" id="select_competition" placeholder="Pick A Competition to Join">
+    <select class="form-control" name="UserComps" id="select_user_competition" placeholder="Pick A Competition to Join">
       <?php getCompsForUser($_SESSION['userid'],$connection) ?>
     </select>
     
@@ -169,13 +169,18 @@ There will be an accept button and a decline button next to each row  of user
   <div class="form-group">
     <div>
         <label for="comp name"><h3>Competition Name</h3></label>
-        
+ <form action="/APIs/create_comp.php" method="post" id="register_comp">
+  <div class="form-group">
+    <div class="col-4">
+        <label for="comp name">Competition Name</label>
         <input type="text" class="form-control" name="competition_name" id="competition_name" >
     </div>
     </br>
    <div class="form-group">
-     <div>
-    <label for="sport"><h4>Select a Sport</h4></label>
+     <div class="col-4">
+    <label for="sport">Select a Sport</label>
+    
+    
     <select class="form-control" name="sport_name" id="sport_selection">
       <option value="1">NRL</option>
       <option value="2">AFL</option>
@@ -184,10 +189,9 @@ There will be an accept button and a decline button next to each row  of user
     </div>
   </div>
 </br>
-  <button type="submit"  name="submit" class="btn btn-primary" id="submit_comp">Create a competition</button>
-  </div>
+  <button type="submit"  name="submit" class="btn btn-primary" id="submit_comp">Create your competition</button>
+  
 </form>
-      <a href="index.php" class="btn btn-success" role="button" id="navigate">Successful</button></a>
 
 </div>
 <div class="col-sm-6">
