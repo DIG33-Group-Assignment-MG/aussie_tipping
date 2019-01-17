@@ -1,3 +1,4 @@
+
 <?php 
 //session_start();
 require_once('config.php');
@@ -47,9 +48,7 @@ There will be an accept button and a decline button next to each row  of user
 //get the user information
 
 
-
 ?>
-
 
 <!doctype html>
 <html lang="en">
@@ -61,7 +60,6 @@ There will be an accept button and a decline button next to each row  of user
     <link rel="icon" href="../../../../favicon.ico">
 
     <title>Members Page</title>
-
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Custom styles for this site -->

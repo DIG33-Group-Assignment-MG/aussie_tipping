@@ -77,12 +77,46 @@ require_once('functions.php');
     <main role="main" class="container">
     </br>
     </br>
+    <h1 class="homepageheading text-center">Aussie Tipping</h1>
+    <div class="content container">
+       <div class="row">
+          <div class="col-sm-4 mt-5">
+              <h4 class="text-center">Free Sports Tipping.</h4> 
+              <p class="text-center">Create a tipping competition for you and your mates</p>
+              <p class="text-center">or</p> 
+              <p class="text-center">Join a tipping competition already started by a mate.</p>
+              <p class="text-center">To start, click on one of the sport logos to select a sport.</P>
+          </div>
+          <!--carousel code-->
+          <section class="col-sm-4">
+            <div class="carousel" id="homepagecarousel" data-ride="carousel">
+              <div class="carousel-item active">
+                <img class="img-fluid" src="images/afl.png" alt="afl logo">
+              </div>
+              <div class="carousel-item">
+                <img class="img-fluid" src="images/bbl.png" alt="big bash league logo">
+              </div>
+              <div class="carousel-item">
+                <img class="img-fluid" src="images/nrl.png" alt="nrl logo">
+              </div>
+              <a class="carousel-control-prev" href="#homepagecarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true">
+                  <span class="sr-only">Previous</span>
+                </span>
+              </a>
+              <a class="carousel-control-next" href="#homepagecarousel" role="button" data-slide="prev">
+                <span class="carousel-control-next-icon" aria-hidden="true">
+                  <span class="sr-only">Next</span>
+                </span>
+              </a>
+            </div> <!--end carousel div-->
+          </section> <!-- end carousel code-->
+          <div class="col-4"> <!--horse lager logo-->
+            <img class="img-fluid" src="images/horse-lager.png">
+          </div> <!--end horse lager div-->
+     </div> <!--end row-->
+     </div> <!--end content container-->
     
-    
-   
-    
- 
-     
 
     </main><!-- /.container -->
 
