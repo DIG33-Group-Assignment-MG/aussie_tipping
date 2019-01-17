@@ -28,12 +28,12 @@ require_once('functions.php');
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Custom styles for this site -->
-    <link href="/css/styles.css" rel="stylesheet" type="text/css">>
+    <link href="/css/styles1.css" rel="stylesheet" type="text/css">>
   </head>
 
   <body>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="#">Aussie Tipping</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -44,17 +44,11 @@ require_once('functions.php');
           <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="tipping-page.php">Tipping</a>
           </li>
            <li class="nav-item">
             <a class="nav-link" href="members-page.php">Members</a>
-          </li><li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
+         
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Competitions</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -62,7 +56,12 @@ require_once('functions.php');
               <a class="dropdown-item" href="#">AFL Tiiping</a>
               <a class="dropdown-item" href="#">BBL Tipping</a>
             </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
           </li>
+           </li><li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li><li class="nav-item"></li>
           <li class="nav-item">
             <a class="nav-link" href="API-Test.php">API Test Page</a>
           </li>
@@ -75,12 +74,14 @@ require_once('functions.php');
     </nav>
 
     <main role="main" class="container">
-    </br>
-    </br>
-    <h1 class="homepageheading text-center">Aussie Tipping</h1>
-    <div class="content container">
+    <div class="bg">
+    <div class="container mt-4">
+      <br>
+       <p class="homepageheading text-center">Aussie Tipping</p>
+     </div>
+    <div class="content container mt-5">
        <div class="row">
-          <div class="col-sm-4 mt-5">
+          <div class= "homepagetext col-sm-4 mt-5">
               <h4 class="text-center">Free Sports Tipping.</h4> 
               <p class="text-center">Create a tipping competition for you and your mates</p>
               <p class="text-center">or</p> 
@@ -117,7 +118,7 @@ require_once('functions.php');
      </div> <!--end row-->
      </div> <!--end content container-->
     
-
+    </div>
     </main><!-- /.container -->
 
     <!-- Bootstrap core JavaScript
