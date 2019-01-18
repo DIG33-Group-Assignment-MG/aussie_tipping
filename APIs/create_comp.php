@@ -16,7 +16,6 @@ success = false
 reason = sql error
 username = null
 
-----------------Not done yet------------------
 
 **Error**
 success = fail

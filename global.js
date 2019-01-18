@@ -125,9 +125,27 @@ $('#login_user').on('submit',function(){
 $('#select_user_competition').change(function(){
     //get the option number which is the tipping comp
     var selection = $("#select_user_competition option:selected").val();
-    console.log("Selection changed" + selection);
+        console.log("Selection changed to " + selection);
     //now that I have the selection I can use Ajax to pull the data from the back end
+     $.ajax({
+         url:'APIs/get_comp_details.php',
+         dataType:'json',
+         type:'get',
+         data:selection,
+         success:function(data){
+            if(data.success)
+            {
+                
+            }
+            
+            else if(!data.success)
+            {
+                
+            }
+        }
+        
     
-    
+     });
+    return false;     
     
 })
