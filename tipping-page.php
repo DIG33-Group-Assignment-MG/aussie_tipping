@@ -7,7 +7,7 @@
 require 'config.php';
 
 ?>
-<!doctype html>
+<doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -16,7 +16,7 @@ require 'config.php';
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Aussie Tipping API Test Page</title>
+    <title>Tipping Page</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">

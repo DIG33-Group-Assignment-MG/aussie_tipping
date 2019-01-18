@@ -24,12 +24,12 @@ require_once('functions.php');
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Homepage Aussie Tipping</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Custom styles for this site -->
-    <link href="/css/styles.css" rel="stylesheet" type="text/css">>
+    <link href="/css/styles1.css" rel="stylesheet" type="text/css">>
   </head>
 
   <body>
@@ -105,7 +105,7 @@ require_once('functions.php');
      </div>
     <div class="content container-fluid mt-5">
        <div class="row">
-          <div class= "homepagetext col-sm-4">
+          <div class= "homepagetext col-sm-4 mt-3">
              
               <p class="text-center text-fluid">Create a tipping competition for you and your mates OR join a tipping competition already started by a mate. To start, click on a sport's logo to select a sport.</P>
           </div>
@@ -133,8 +133,8 @@ require_once('functions.php');
               </a>
             </div> <!--end carousel div-->
           </section> <!-- end carousel code-->
-          <div class="col-sm-4"> <!--horse lager logo-->
-            <img class="img-fluid" src="images/horse-lager.png">
+          <div class="col-sm-4 mt-4"> <!--horse lager logo-->
+            <img class="img-fluid" src="images/horse.png">
           </div> <!--end horse lager div-->
      </div> <!--end row-->
      </div> <!--end content container-->

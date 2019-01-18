@@ -20,7 +20,7 @@ require_once('functions.php');
 
 <!-- Page content -->
 <!-- Navbar only needs basic content -->
-<!doctype html>
+<doctype html>
 
 <html lang="en">
   <head>

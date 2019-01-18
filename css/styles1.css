@@ -1,0 +1,54 @@
+.btn{
+    margin:0px 10px 0px 10px;
+    
+}
+.homepagetext{
+    color: white; 
+    font-weight :bold;
+    font-family: cursive;
+    font-size:1.8vw;
+   
+}
+#homeh1{
+    color:white;
+    font-family:cursive;
+    
+}
+
+.homepageheading{
+    color: white;
+    font-family: cursive; 
+    font-size: 80px;
+}
+
+/*main{
+    /*background-image: url('/img/crowd-1584115__340.jpg');*/
+    
+   /* min-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}*/
+.bg { 
+ 
+  background-image: url('/images/background-crowd.png');
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+#navigate{
+    visibility: hidden;
+}
+
+body, html {
+  height: 100%;
+  
+}
+
