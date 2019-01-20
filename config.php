@@ -13,10 +13,10 @@ error_reporting(E_ALL);
 
 
 //Michael DB Config
-$dbhost = "localhost";
-$dbuser = "grahamclements";
+$dbhost = "127.0.0.1";
+$dbuser = "michaeldavidsond";
 $dbpass = "";
-$dbname = "aussie_tipping";
+$dbname = "Aussie_Tipping";
 
 //Grahams DB Config
 // $dbhost = "localhost";
