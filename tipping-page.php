@@ -1,7 +1,6 @@
 
 <?php
-/*VIEW MOVIE
-*details of individual movies*/
+//The tipping page, allows a user to pick the winner of games in a particular upcoming round. The user can also use the page to change the tips./
 
 //links to the config file
 require 'config.php';
@@ -46,109 +45,14 @@ require 'config.php';
    <main class=bg>
        
    
-   <body data-spy="scroll" data-target="#navbar-site" data-offset="80">
-  
-
-<div class="container" id="whitebackground">
+  <div class="container" id="whitebackground">
 
 
 <!-- ROW 1 -->
-    <h2 class="mt-5">Games</h2>
-    <div class="row">
-      <article class="col-1 mt-4">
+    <h1 class="mt-5">Tipping</h1>
+   <p>(Placeholder for Tipping)</p>
 
-<?php
-        
-       $query = "SELECT * FROM Sports_Round_Matches ORDER BY match_id";
-       $result = mysqli_query($connection, $query);
 
-        //performs a while loop on the returned data
-       while($row = mysqli_fetch_assoc($result)){
-        
-  
-     
-       echo "<p>{$row['fixture_day']}<p>";
-?>
-<!--creates nested columns-->
-      </article>
-         <div class="row col-10">
-             <div class="col-3 mt-4">
-
-<?php
-
-                   echo "<p>{$row['Home_Team_ID']}</p>";
-
-?>
-
-            <!--  </div>   
-              <div class="col-2"> -->
-         
-<?php         
-         
-               //    echo "<img src=" . $row['icon'] . " alt='team icon'>";   
-     
-?>
-     
-              </div>
-              <div class="col-3 mt-4">
-<?php
-
-                   echo "<p>{$row['Away_Team_ID']}</p>";
-            
-?>            
-            
-           <!--   </div>   
-              <div class="col-2"> -->
-            
-<?php            
-     //              echo "<img src=" . $row['icon'] . " alt='team icon'>";   
-     
-?>     
-              </div>
-            </div>
-          <article class="col-1 mt-4">
-<!--end of nested columns-->      
-<?php
-
-                   echo "<p>{$row['fixture_time']}</p>";
-
-        }       
-?>
-      </article>
-    </div><!-- row -->   
-      
-     
-<?php     
-      
-      
-      
-      
-      
-      
-      
-      
-  
-        //Tests if there was a query error
-        if (!$result) {
-        die("Database query failed.");
-        }
-      
-
-        //releases returned data
-        mysqli_free_result($result);
-      
-        //closes database connection
-        mysqli_close($connection);
-      
-?>
-
-<!-- ROW 1 -->
-    
-    </div><!-- row --></div><!-- container -->
-</html>
-
-    
-    </main><!-- /.container -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

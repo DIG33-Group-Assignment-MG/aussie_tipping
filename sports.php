@@ -10,7 +10,6 @@ session_destroy();
 require_once('config.php');
 //then run the functions script
 require_once('functions.php');
-
 ?>
 
 <doctype html>

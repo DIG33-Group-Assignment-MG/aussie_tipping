@@ -21,7 +21,7 @@ require_once('functions.php');
 
 <!-- Page content -->
 <!-- Navbar only needs basic content -->
-<!doctype html>
+<doctype html>
 
 <html lang="en">
   <head>
@@ -31,62 +31,52 @@ require_once('functions.php');
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Login</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Custom styles for this site -->
-    <link href="/css/styles.css" rel="stylesheet" type="text/css">>
+    <link href="/css/styles2.css" rel="stylesheet" type="text/css">>
   </head>
 
   <body>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#">Aussie Tipping</a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="index.php">Aussie Tipping</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="tipping-page.php">Tipping</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
-        </ul>
+        
         </div>
         </nav>
-        </body>
-        </br>
-        </br>
-        </br>
-                    <h1 id="registration_header">Login</h1>
+  <main class="bg">
+   <div class="container mt-4 col-4">
+    <div id="whitebackground">
+       
+         <h1 id="registration_header">Login</h1>
 
 <form action="/APIs/login_user.php" method="post" id="login_user">
   <div class="form-group">
-    <div class="col-4">
+    <div class="col-10">
         <label for="username">User Name</label>
         <input type="text" class="form-control" name="user_name" autocomplete="username" placeholder="Username" >
     </div>
   </div>
   <div class="form-group">
-    <div class="col-4">
+    <div class=col-10>
         <label for="InputPassword">Password</label>
         <input type="password" class="form-control" name="password" autocomplete="new-password" placeholder="Password" >
     </div>
   <button type="submit" name="submit"  class="btn btn-primary" id="submit_login">Submit</button>
   
 </form>
-     </form>
-        
+     </div>
+     </div>
+     </div>
+     </main>
+     
         
            <!-- Bootstrap core JavaScript
     ================================================== -->

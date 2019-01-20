@@ -50,8 +50,7 @@ require_once('functions.php');
             <a class="nav-link" href="about.php">About Us</a>
          </li>
           </ul>
-        <a href='registration.php'><button type='button' class='btn btn-primary' id='register_button'>Register</button></a> 
-        <button type="button" class="btn btn-secondary">Login</button>
+       
   
     </div>
     </nav>
@@ -60,7 +59,7 @@ require_once('functions.php');
    <div class="container mt-5">
     <div id="whitebackground">
     <br>
-     <h1 class="text-center" id="mainheading">Contact Us</h1>
+     <h1 class="text-center">Contact Us</h1>
 
    
  </main>

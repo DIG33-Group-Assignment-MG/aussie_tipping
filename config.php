@@ -23,7 +23,7 @@ error_reporting(E_ALL);
 $dbhost = "localhost";
 $dbuser = "grahamclements";
 $dbpass = "";
-$dbname = "aussie_tipping";
+$dbname = "aussie_tipping2";
  
 
 // MySQL connection
