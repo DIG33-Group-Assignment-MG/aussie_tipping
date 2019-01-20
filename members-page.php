@@ -50,7 +50,7 @@ There will be an accept button and a decline button next to each row  of user
 
 ?>
 
-<!doctype html>
+<doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -63,43 +63,32 @@ There will be an accept button and a decline button next to each row  of user
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Custom styles for this site -->
-    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="/css/styles2.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
 <!-- Nav Menu -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">Aussie Tipping</a>
+          <a class="navbar-brand" href="index.php">Aussie Tipping</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.php">Home Page</a>
-            </li>
-            <li class="nav-item">
+             <li class="nav-item">
               <a class="nav-link" href="tipping-page.php" target="_blank">Tipping</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="members-page.php">Members <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">User APIs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sport APIs</a>
-            </li>
+            
         </ul>
          <?php echo "<a class='nav-link' href='members-page.php' id='user_link'>Welcome {$_SESSION['user']}</a>";?>
       </div>
     </nav>
   
-<main>
+<main class="bg">
 <!-- Div 1 Should contain the member's page from the proposal-->
-<div class="container mt-5" >
+<div class="container mt-5" id="whitebackground" >
 </br>
 <!--This includes the Member's name-->
 <h1 class="text-center" id="Members_Title">Welcome <?php echo $_SESSION['user']?></h1>
@@ -165,9 +154,8 @@ There will be an accept button and a decline button next to each row  of user
   <h2 id="tipping_comp_header">Create Competition</h2>
  <p>If you want to create a competition enter a name for the competition, select the sport and click on Create a Competition</p> <form action="/APIs/create_comp.php" method="post" id="register_comp">
   <div class="form-group">
-    <div>
-        <label for="comp name"><h3>Competition Name</h3></label>
- <form action="/APIs/create_comp.php" method="post" id="register_comp">
+   <label for="comp name"><h3>Competition Name</h3></label>
+  <form action="/APIs/create_comp.php" method="post" id="register_comp">
   <div class="form-group">
     <div class="col-4">
         <label for="comp name">Competition Name</label>
@@ -186,12 +174,15 @@ There will be an accept button and a decline button next to each row  of user
     </select>
     </div>
   </div>
+  </div>
+  </div>
+  
+  
 </br>
   <button type="submit"  name="submit" class="btn btn-primary" id="submit_comp">Create your competition</button>
-  
+  </div>
 </form>
 
-</div>
 <div class="col-sm-6">
 <h2 id="join_header">Join Competition</h2>
 <p>If you know the name of a tipping competition you have been invited to join, select it from the drop down list and then click on Join a Competition.</p>
@@ -221,10 +212,9 @@ There will be an accept button and a decline button next to each row  of user
   <button type="submit"  name="allow" class="btn btn-primary" id="join_comp">Allow</button>
   <button type="submit"  name="delete" class="btn btn-primary" id="join_comp">Delete</button>
   </div>
-</div>
 </div><!--row-->
 </div><!--container-->
-
+</main>
  
   
   
@@ -238,6 +228,7 @@ There will be an accept button and a decline button next to each row  of user
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
     <script src="global.js"></script>
+  
   </body>
   
   

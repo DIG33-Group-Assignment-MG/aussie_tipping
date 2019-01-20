@@ -45,24 +45,24 @@ require_once('functions.php');
         <ul class="navbar-nav mr-auto">
           
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sports</a>
+            <a class="nav-link dropdown-toggle" href="sports.php" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sports</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" href="sports.php">NRL Tipping</a>
               <a class="dropdown-item" href="sports.php">AFL Tiiping</a>
               <a class="dropdown-item" href="sports.php">BBL Tipping</a>
             </div>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="about.php">About Us</a>
           </li>
            </li><li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="contact.php">Contact Us</a>
           </li><li class="nav-item"></li>
           <li class="nav-item">
             <a class="nav-link" href="API-Test.php">API Test Page</a>
           </li>
           </ul>
          <a href='registration.php'><button type='button' class='btn btn-primary' id='register_button'>Register</button></a> 
-         
+         <a href='login.php'><button type='button' class='btn btn-primary' id='login_button'>Login In</button></a> 
          <!--<li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"><i></i></a></li>-->
            <li class="dropdown order-1">
                 <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Login <span class="caret"></span></button>
@@ -93,7 +93,7 @@ require_once('functions.php');
   <div role="main" class="container">
     
    
-    <div class="mt-5">
+    <div class="mt-4">
       <br>
        <p class="homepageheading text-center">Aussie Tipping</p>
        <h1 class="text-center" id="mainheading">Free Sports Tipping.</h1> 

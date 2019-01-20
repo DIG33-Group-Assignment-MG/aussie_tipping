@@ -1,10 +1,4 @@
-<!-- This page will be used to register a user
-
-it will take a name, a username, a password and an email.
-
-Username and Email both need to be unique
-
-This page will only be accessible to a guest
+<!-- This page is the about page -->
 
 <?php
 
@@ -30,7 +24,7 @@ require_once('functions.php');
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Registration</title>
+    <title>About Us</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -51,55 +45,24 @@ require_once('functions.php');
         <ul class="navbar-nav mr-auto">
            <li class="nav-item">
             <a class="nav-link" href="sports.php">Sports</a>
-         
+         </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.php">Contact Us</a>
+         </li>
           </ul>
-       
+        <a href='registration.php'><button type='button' class='btn btn-primary' id='register_button'>Register</button></a> 
         <button type="button" class="btn btn-secondary">Login</button>
   
     </div>
     </nav>
  </div>
  <main class="bg">
-   <div class="container mt-5 col-6>
+   <div class="container mt-5">
     <div id="whitebackground">
     <br>
-     <h1 class="text-center">Registration</h1>
+     <h1 class="text-center" id+"mainheading">About Us</h1>
 
-    <h2 class="text-center" id="registration_header">New User</h2>
-    
-    
-
-<form action="/APIs/register.php" method="post" id="register" >
-  <div class="form-group d-flex justify-content-sm-center">
-    <div class="col-6">
-        <label class="form-control-label" for="full name">Full Name</label>
-        <input type="text" class="form-control" name="real_name" autocomplete="name"  placeholder="Full Name">
-    </div>
-  </div>
-  <div class="form-group d-flex justify-content-sm-center">
-    <div class="col-6">
-        <label class="form-control-label" for="username">User Name</label>
-        <input type="text" class="form-control" name="user_name" autocomplete="username" placeholder="Username" >
-    </div>
-  </div>
-  <div class="form-group d-flex justify-content-sm-center">
-    <div class="col-6">
-        <label class="form-control-label" for="InputPassword">Password</label>
-        <input type="password" class="form-control" name="password" autocomplete="new-password" placeholder="Password" >
-    </div>
-  </div>
-  <div class="form-group d-flex justify-content-sm-center">
-    <div class="col-6">
-        <label class="form-control-label" for="InputEmail">Email address</label>
-        <input type="email" class="form-control" name="email" autocomplete="email" aria-describedby="emailHelp" placeholder="Enter email" value="@email.com">
-    </div>
-  </div>
-  <div class="text-center">
-  <button type="submit" name="submit"  class="btn btn-primary btn-center" id="submit">Submit</button>
-  </div>
-</form>
-      <!--not sure what this line in the original code does-->
-      <a href="index.php" class="btn btn-success" role="button" id="navigate">Successful</button></a>
+   
  </main>
 </div>
  </div>
