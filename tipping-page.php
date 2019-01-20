@@ -35,11 +35,9 @@ require 'config.php';
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="members-page.php">Member's </a>
+            <a class="nav-link" href="members-page.php">Members </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sports.php">Sport APIs</a>
-          </li>
+        
           </ul>
       
     </div>
@@ -47,17 +45,9 @@ require 'config.php';
 
    <main>
        
-    </br>
-    </br>
-    </br>
+   
    <body data-spy="scroll" data-target="#navbar-site" data-offset="80">
-  <style>
-    img {
-      width: 75px;
-      height: 50px;
-      max-height: 75px;
-    }
-  </style>
+  
 
 <div class="container">
 

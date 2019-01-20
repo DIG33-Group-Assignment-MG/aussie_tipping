@@ -62,8 +62,10 @@ require_once('functions.php');
           </li>
           </ul>
          <a href='registration.php'><button type='button' class='btn btn-primary' id='register_button'>Register</button></a> 
-         <a href='login.php'><button type='button' class='btn btn-primary' id='login_button'>Login In</button></a> 
-         <!--<li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"><i></i></a></li>-->
+         <a href='login.php'><button type='button' class='btn btn-primary' id='login_button'>Login</button></a> 
+         
+         <!--drop down login in form on menu that is not working yet so coded out-->
+         <!--<li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"><i></i></a></li>
            <li class="dropdown order-1">
                 <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Login <span class="caret"></span></button>
                     <ul class="dropdown-menu dropdown-menu-right mt-2">
@@ -79,7 +81,7 @@ require_once('functions.php');
                                </div>
                                    <button type="submit" name="submit" class="btn btn-primary" id="submit_login">Submit</button>
                               </form>
-                        </li>
+                        </li> -->
                     </ul>
                 <!--</li>-->
             

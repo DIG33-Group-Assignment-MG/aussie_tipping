@@ -255,3 +255,7 @@
 [20-Jan-2019 19:20:08 UTC] PHP Stack trace:
 [20-Jan-2019 19:20:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/login_user.php:0
 [20-Jan-2019 19:20:08 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/login_user.php:54
+[20-Jan-2019 19:46:09 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/APIs/login_user.php on line 54
+[20-Jan-2019 19:46:09 UTC] PHP Stack trace:
+[20-Jan-2019 19:46:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/login_user.php:0
+[20-Jan-2019 19:46:09 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/login_user.php:54
