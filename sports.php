@@ -28,7 +28,7 @@ require_once('functions.php');
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Custom styles for this site -->
-    <link href="/css/styles.css" rel="stylesheet" type="text/css">>
+    <link href="/css/styles2.css" rel="stylesheet" type="text/css">>
   </head>
 
   <body>
@@ -62,22 +62,36 @@ require_once('functions.php');
          </div>
     </nav>
     <main class="bg">
-    <div role="main" class="container">
+    <div role="main" class="container mt-4">
+      <br>
+       <h1 class="text-center mt-4" id="mainheading">Sport (Placeholder)</h1>
     
     
     <div class="content container mt-3">
        <div class="row">
-          <div class= "col-sm-6 mt-5">
-              
+          <div class= "col-sm-6 mt-3" id="sportstext">
+            <h3>Season Starts</h3>
+            
+            <p>(Date placeholder)</p>
+            
+            <h3>Number of Rounds</h3>
+            
+            <p>(Rounds placeholder)</p>
+            
+            <h3>Final Date to Join or Create a Competion</h3>
+            
+            <p>(Final date placeholder)</p>
+            
+            <a href='registration.php'><button type='button' class='btn btn-primary' id='register_button'>Register</button></a> 
           </div>
           <!--carousel code-->
           <section class="col-sm-6">
             <div class="carousel" id="sportcarousel" data-ride="carousel">
               <div class="carousel-item active">
-                <img class="img-fluid" src="images/afl.png" alt="afl logo">
+                <img class="img-fluid" src="images/bencutting.png" alt="Cricketer Ben Cutting">
               </div>
               <div class="carousel-item">
-                <img class="img-fluid" src="images/bbl.png" alt="big bash league logo">
+                <img class="img-fluid" src="images/footy.png" alt="Geelong V Essendon">
               </div>
               <div class="carousel-item">
                 <img class="img-fluid" src="images/nrl.png" alt="nrl logo">

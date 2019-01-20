@@ -29,7 +29,7 @@ require_once('functions.php');
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Custom styles for this site -->
-    <link href="/css/styles1.css" rel="stylesheet" type="text/css">>
+    <link href="/css/styles2.css" rel="stylesheet" type="text/css">>
   </head>
 
   <body>
@@ -101,13 +101,13 @@ require_once('functions.php');
     <div class="mt-5">
       <br>
        <p class="homepageheading text-center">Aussie Tipping</p>
-       <h1 class="text-center" id="homeh1">Free Sports Tipping.</h1> 
+       <h1 class="text-center" id="mainheading">Free Sports Tipping.</h1> 
      </div>
     <div class="content container-fluid mt-5">
        <div class="row">
-          <div class= "homepagetext col-sm-4 mt-3">
+          <div class= "maintext col-sm-4 mt-3">
              
-              <p class="text-center text-fluid">Create a tipping competition for you and your mates OR join a tipping competition already started by a mate. To start, click on a sport's logo to select a sport.</P>
+              <p class="text-center text-fluid">Create a tipping competition for you and your mates OR join a tipping competition already started by a mate. Click on a sport's logo to find out about the sports that are available, or register to join.</p>
           </div>
           <!--carousel code-->
           <section class="col-sm-4">
