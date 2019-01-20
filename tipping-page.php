@@ -21,12 +21,12 @@ require 'config.php';
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Custom styles for this site -->
-    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="/css/styles2.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="index.php">Aussie Tipping</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -43,25 +43,23 @@ require 'config.php';
     </div>
     </nav>
 
-   <main>
+   <main class=bg>
        
    
    <body data-spy="scroll" data-target="#navbar-site" data-offset="80">
   
 
-<div class="container">
+<div class="container" id="whitebackground">
 
 
 <!-- ROW 1 -->
-    <h2>Games</h2>
+    <h2 class="mt-5">Games</h2>
     <div class="row">
       <article class="col-1 mt-4">
 
 <?php
         
-       $query = "SELECT * ";
-       $query .= "FROM aussie_tipping ON Sports_Round_Matches = match_id";
-       $query .= " ORDER BY match_id";
+       $query = "SELECT * FROM Sports_Round_Matches ORDER BY match_id";
        $result = mysqli_query($connection, $query);
 
         //performs a while loop on the returned data
@@ -69,7 +67,7 @@ require 'config.php';
         
   
      
-       echo "<h3 id={$row['fixture_day']}>";
+       echo "<p>{$row['fixture_day']}<p>";
 ?>
 <!--creates nested columns-->
       </article>
@@ -78,7 +76,7 @@ require 'config.php';
 
 <?php
 
-                   echo "<p>{$row['Home_Team_id']}</p>";
+                   echo "<p>{$row['Home_Team_ID']}</p>";
 
 ?>
 
@@ -95,7 +93,7 @@ require 'config.php';
               <div class="col-3 mt-4">
 <?php
 
-                   echo "<p>{$row['Away_Team_id']}</p>";
+                   echo "<p>{$row['Away_Team_ID']}</p>";
             
 ?>            
             
@@ -120,7 +118,7 @@ require 'config.php';
     </div><!-- row -->   
       
      
-<?php>     
+<?php     
       
       
       
@@ -142,14 +140,13 @@ require 'config.php';
         //closes database connection
         mysqli_close($connection);
       
-?>git
+?>
 
 <!-- ROW 1 -->
     
     </div><!-- row --></div><!-- container -->
 </html>
-<p>I have tried this code out on a different database with information in it,
-and it seems to work. I still haven't added the form element that they click on to chose a winner. I am having real problems pushing this to git</p>
+
     
     </main><!-- /.container -->
 
