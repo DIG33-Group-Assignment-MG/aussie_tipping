@@ -98,7 +98,7 @@ $json = array(
         
         $json['userid'] = $row['user_id'];
         $_SESSION['userid'] = $row['user_id'];
-         $_SESSION['user'] = $username;
+        $_SESSION['user'] = $username;
         
         
         //no result returned

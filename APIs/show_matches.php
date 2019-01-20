@@ -55,6 +55,7 @@ $rows = array();
 while($r = mysqli_fetch_assoc($sport_result)) {
     $r['Home_Team_ID'] = getTeamName($r['Home_Team_ID'],$connection);
     $r['Away_Team_ID'] = getTeamName($r['Away_Team_ID'],$connection);
+    $r['TestValue'] = "Test Value not from database can be used to provide a status, rather than the datatbase";
     $rows[] = $r;
 }
 if($rows)

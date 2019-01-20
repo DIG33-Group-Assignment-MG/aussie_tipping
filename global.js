@@ -21,7 +21,7 @@ $('#register').on('submit',function(){
             if(data.success)
             {
             
-                alert('Welcome aboard ' + data.username)
+                //alert('Welcome aboard ' + data.username)
                 //Redirect them to their member page
                 window.location.href = 'Member.php?id='+data.userid;
                 
@@ -104,7 +104,7 @@ $('#login_user').on('submit',function(){
         success:function(data){
             if(data.success)
             {
-                alert('Welcome back ' + data.username)
+                //alert('Welcome back ' + data.username)
                 //Redirect them to their member page
                 window.location.href = 'members-page.php';
             }
