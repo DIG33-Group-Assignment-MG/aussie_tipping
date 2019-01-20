@@ -52,14 +52,16 @@ require_once('functions.php');
               <a class="dropdown-item" href="#">BBL Tipping</a>
             </div>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="about.php">About Us</a>
           </li>
            </li><li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="contact.php">Contact Us</a>
           </li><li class="nav-item"></li>
           </ul>
         </div>
          </div>
+           <a href='registration.php'><button type='button' class='btn btn-primary' id='register_button'>Register</button></a> 
+         <a href='login.php'><button type='button' class='btn btn-primary' id='login_button'>Login In</button></a> 
     </nav>
     <main class="bg">
     <div role="main" class="container mt-4">
@@ -69,7 +71,7 @@ require_once('functions.php');
     
     <div class="content container mt-3">
        <div class="row">
-          <div class= "col-sm-6 mt-3" id="sportstext">
+          <div class= "col-sm-6 mt-3" id="whitebackground">
             <h3>Season Starts</h3>
             
             <p>(Date placeholder)</p>
@@ -94,7 +96,7 @@ require_once('functions.php');
                 <img class="img-fluid" src="images/footy.png" alt="Geelong V Essendon">
               </div>
               <div class="carousel-item">
-                <img class="img-fluid" src="images/nrl.png" alt="nrl logo">
+                <img class="img-fluid" src="images/nrlmain.png" alt="Broncos">
               </div>
               <a class="carousel-control-prev" href="#sportcarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true">

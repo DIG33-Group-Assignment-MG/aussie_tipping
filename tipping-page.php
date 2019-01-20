@@ -21,13 +21,13 @@ require 'config.php';
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Custom styles for this site -->
-    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="/css/styles2.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#">Aussie Tipping</a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="index.php">Aussie Tipping</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -35,61 +35,39 @@ require 'config.php';
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">User APIs <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="members-page.php">Members </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Competition APIs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sport APIs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.php">Home Page</a>
-          </li>
-         </ul>
-        <button type="button" class="btn btn-primary">Register</button>
-        <button type="button" class="btn btn-secondary">Login</button>
-  
+        
+          </ul>
+      
     </div>
     </nav>
 
-   <main>
+   <main class=bg>
        
-    </br>
-    </br>
-    </br>
+   
    <body data-spy="scroll" data-target="#navbar-site" data-offset="80">
-  <style>
-    img {
-      width: 75px;
-      height: 50px;
-      max-height: 75px;
-    }
-  </style>
+  
 
-<div class="container">
+<div class="container" id="whitebackground">
 
 
 <!-- ROW 1 -->
-    <h2>Games</h2>
+    <h2 class="mt-5">Games</h2>
     <div class="row">
       <article class="col-1 mt-4">
 
 <?php
-        //performs a query on the genre and movies tables to select all information
-        $query = "SELECT * ";
-        $query .= "FROM tipping JOIN     ";
         
-//still yet to fill in the details waiting for database to be built.//
-        $query .= " ORDER BY genre, title";
-        $result = mysqli_query($connection, $query);
+       $query = "SELECT * FROM Sports_Round_Matches ORDER BY match_id";
+       $result = mysqli_query($connection, $query);
 
         //performs a while loop on the returned data
-        while($row = mysqli_fetch_assoc($result)){
+       while($row = mysqli_fetch_assoc($result)){
         
   
      
-       echo "<h3 id={$row['date_played']}>";
+       echo "<p>{$row['fixture_day']}<p>";
 ?>
 <!--creates nested columns-->
       </article>
@@ -98,16 +76,16 @@ require 'config.php';
 
 <?php
 
-                   echo "<p>{$row['hometeam']}</p>";
+                   echo "<p>{$row['Home_Team_ID']}</p>";
 
 ?>
 
-              </div>   
-              <div class="col-2">
+            <!--  </div>   
+              <div class="col-2"> -->
          
 <?php         
          
-                   echo "<img src=" . $row['icon'] . " alt='team icon'>";   
+               //    echo "<img src=" . $row['icon'] . " alt='team icon'>";   
      
 ?>
      
@@ -115,15 +93,15 @@ require 'config.php';
               <div class="col-3 mt-4">
 <?php
 
-                   echo "<p>{$row['awayteam']}</p>";
+                   echo "<p>{$row['Away_Team_ID']}</p>";
             
 ?>            
             
-              </div>   
-              <div class="col-2">
+           <!--   </div>   
+              <div class="col-2"> -->
             
 <?php            
-                   echo "<img src=" . $row['icon'] . " alt='team icon'>";   
+     //              echo "<img src=" . $row['icon'] . " alt='team icon'>";   
      
 ?>     
               </div>
@@ -132,7 +110,7 @@ require 'config.php';
 <!--end of nested columns-->      
 <?php
 
-                   echo "<p>{$row['venue']}</p>";
+                   echo "<p>{$row['fixture_time']}</p>";
 
         }       
 ?>
@@ -140,7 +118,7 @@ require 'config.php';
     </div><!-- row -->   
       
      
-<?php>     
+<?php     
       
       
       
@@ -162,14 +140,13 @@ require 'config.php';
         //closes database connection
         mysqli_close($connection);
       
-?>git
+?>
 
 <!-- ROW 1 -->
     
     </div><!-- row --></div><!-- container -->
 </html>
-<p>I have tried this code out on a different database with information in it,
-and it seems to work. I still haven't added the form element that they click on to chose a winner. I am having real problems pushing this to git</p>
+
     
     </main><!-- /.container -->
 
