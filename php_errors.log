@@ -147,3 +147,111 @@
 [20-Jan-2019 04:06:54 UTC] PHP Stack trace:
 [20-Jan-2019 04:06:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_matches.php:0
 [20-Jan-2019 04:06:54 UTC] PHP   2. mysqli_fetch_assoc() /home/ubuntu/workspace/APIs/show_matches.php:71
+[20-Jan-2019 18:04:39 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/APIs/login_user.php on line 54
+[20-Jan-2019 18:04:39 UTC] PHP Stack trace:
+[20-Jan-2019 18:04:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/login_user.php:0
+[20-Jan-2019 18:04:39 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/login_user.php:54
+[20-Jan-2019 18:05:17 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/APIs/login_user.php on line 54
+[20-Jan-2019 18:05:17 UTC] PHP Stack trace:
+[20-Jan-2019 18:05:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/login_user.php:0
+[20-Jan-2019 18:05:17 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/login_user.php:54
+[20-Jan-2019 18:05:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/APIs/login_user.php on line 54
+[20-Jan-2019 18:05:52 UTC] PHP Stack trace:
+[20-Jan-2019 18:05:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/login_user.php:0
+[20-Jan-2019 18:05:52 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/login_user.php:54
+[20-Jan-2019 18:06:06 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/APIs/login_user.php on line 54
+[20-Jan-2019 18:06:06 UTC] PHP Stack trace:
+[20-Jan-2019 18:06:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/login_user.php:0
+[20-Jan-2019 18:06:06 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/login_user.php:54
+[20-Jan-2019 18:06:19 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/APIs/login_user.php on line 54
+[20-Jan-2019 18:06:19 UTC] PHP Stack trace:
+[20-Jan-2019 18:06:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/login_user.php:0
+[20-Jan-2019 18:06:19 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/login_user.php:54
+[20-Jan-2019 18:16:33 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/APIs/login_user.php on line 54
+[20-Jan-2019 18:16:33 UTC] PHP Stack trace:
+[20-Jan-2019 18:16:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/login_user.php:0
+[20-Jan-2019 18:16:33 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/login_user.php:54
+[20-Jan-2019 19:08:58 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/APIs/login_user.php on line 54
+[20-Jan-2019 19:08:58 UTC] PHP Stack trace:
+[20-Jan-2019 19:08:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/login_user.php:0
+[20-Jan-2019 19:08:58 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/login_user.php:54
+[20-Jan-2019 19:10:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions.php on line 14
+[20-Jan-2019 19:10:21 UTC] PHP Stack trace:
+[20-Jan-2019 19:10:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[20-Jan-2019 19:10:21 UTC] PHP   2. checkUserName() /home/ubuntu/workspace/APIs/register.php:61
+[20-Jan-2019 19:10:21 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions.php:14
+[20-Jan-2019 19:10:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/APIs/register.php on line 81
+[20-Jan-2019 19:10:21 UTC] PHP Stack trace:
+[20-Jan-2019 19:10:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[20-Jan-2019 19:10:21 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/register.php:81
+[20-Jan-2019 19:10:28 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions.php on line 14
+[20-Jan-2019 19:10:28 UTC] PHP Stack trace:
+[20-Jan-2019 19:10:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[20-Jan-2019 19:10:28 UTC] PHP   2. checkUserName() /home/ubuntu/workspace/APIs/register.php:61
+[20-Jan-2019 19:10:28 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions.php:14
+[20-Jan-2019 19:10:28 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/APIs/register.php on line 81
+[20-Jan-2019 19:10:28 UTC] PHP Stack trace:
+[20-Jan-2019 19:10:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[20-Jan-2019 19:10:28 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/register.php:81
+[20-Jan-2019 19:10:38 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions.php on line 14
+[20-Jan-2019 19:10:38 UTC] PHP Stack trace:
+[20-Jan-2019 19:10:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[20-Jan-2019 19:10:38 UTC] PHP   2. checkUserName() /home/ubuntu/workspace/APIs/register.php:61
+[20-Jan-2019 19:10:38 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions.php:14
+[20-Jan-2019 19:10:38 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/APIs/register.php on line 81
+[20-Jan-2019 19:10:38 UTC] PHP Stack trace:
+[20-Jan-2019 19:10:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[20-Jan-2019 19:10:38 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/register.php:81
+[20-Jan-2019 19:11:10 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions.php on line 14
+[20-Jan-2019 19:11:10 UTC] PHP Stack trace:
+[20-Jan-2019 19:11:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[20-Jan-2019 19:11:10 UTC] PHP   2. checkUserName() /home/ubuntu/workspace/APIs/register.php:61
+[20-Jan-2019 19:11:10 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions.php:14
+[20-Jan-2019 19:11:10 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/APIs/register.php on line 81
+[20-Jan-2019 19:11:10 UTC] PHP Stack trace:
+[20-Jan-2019 19:11:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[20-Jan-2019 19:11:10 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/register.php:81
+[20-Jan-2019 19:11:59 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions.php on line 14
+[20-Jan-2019 19:11:59 UTC] PHP Stack trace:
+[20-Jan-2019 19:11:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[20-Jan-2019 19:11:59 UTC] PHP   2. checkUserName() /home/ubuntu/workspace/APIs/register.php:61
+[20-Jan-2019 19:11:59 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions.php:14
+[20-Jan-2019 19:11:59 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/APIs/register.php on line 81
+[20-Jan-2019 19:11:59 UTC] PHP Stack trace:
+[20-Jan-2019 19:11:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[20-Jan-2019 19:11:59 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/register.php:81
+[20-Jan-2019 19:12:32 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions.php on line 14
+[20-Jan-2019 19:12:32 UTC] PHP Stack trace:
+[20-Jan-2019 19:12:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[20-Jan-2019 19:12:32 UTC] PHP   2. checkUserName() /home/ubuntu/workspace/APIs/register.php:61
+[20-Jan-2019 19:12:32 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions.php:14
+[20-Jan-2019 19:12:32 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/APIs/register.php on line 81
+[20-Jan-2019 19:12:32 UTC] PHP Stack trace:
+[20-Jan-2019 19:12:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[20-Jan-2019 19:12:32 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/register.php:81
+[20-Jan-2019 19:12:48 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions.php on line 14
+[20-Jan-2019 19:12:48 UTC] PHP Stack trace:
+[20-Jan-2019 19:12:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[20-Jan-2019 19:12:48 UTC] PHP   2. checkUserName() /home/ubuntu/workspace/APIs/register.php:61
+[20-Jan-2019 19:12:48 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions.php:14
+[20-Jan-2019 19:12:48 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/APIs/register.php on line 81
+[20-Jan-2019 19:12:48 UTC] PHP Stack trace:
+[20-Jan-2019 19:12:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[20-Jan-2019 19:12:48 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/register.php:81
+[20-Jan-2019 19:12:58 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions.php on line 14
+[20-Jan-2019 19:12:58 UTC] PHP Stack trace:
+[20-Jan-2019 19:12:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[20-Jan-2019 19:12:58 UTC] PHP   2. checkUserName() /home/ubuntu/workspace/APIs/register.php:61
+[20-Jan-2019 19:12:58 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions.php:14
+[20-Jan-2019 19:12:58 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/APIs/register.php on line 81
+[20-Jan-2019 19:12:58 UTC] PHP Stack trace:
+[20-Jan-2019 19:12:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/register.php:0
+[20-Jan-2019 19:12:58 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/register.php:81
+[20-Jan-2019 19:13:43 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/APIs/login_user.php on line 54
+[20-Jan-2019 19:13:43 UTC] PHP Stack trace:
+[20-Jan-2019 19:13:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/login_user.php:0
+[20-Jan-2019 19:13:43 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/login_user.php:54
+[20-Jan-2019 19:20:08 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/APIs/login_user.php on line 54
+[20-Jan-2019 19:20:08 UTC] PHP Stack trace:
+[20-Jan-2019 19:20:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/login_user.php:0
+[20-Jan-2019 19:20:08 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/login_user.php:54

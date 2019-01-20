@@ -68,7 +68,7 @@ require_once('functions.php');
         </br>
         </br>
         </br>
-                    <h1 id="registration_header">New User</h1>
+                    <h1 id="registration_header">Login</h1>
 
 <form action="/APIs/login_user.php" method="post" id="login_user">
   <div class="form-group">

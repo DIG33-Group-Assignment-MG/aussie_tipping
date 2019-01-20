@@ -27,7 +27,7 @@ require 'config.php';
   <body>
 
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#">Aussie Tipping</a>
+      <a class="navbar-brand" href="index.php">Aussie Tipping</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -35,21 +35,13 @@ require 'config.php';
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">User APIs <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="members-page.php">Member's </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Competition APIs</a>
+            <a class="nav-link" href="sports.php">Sport APIs</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sport APIs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.php">Home Page</a>
-          </li>
-         </ul>
-        <button type="button" class="btn btn-primary">Register</button>
-        <button type="button" class="btn btn-secondary">Login</button>
-  
+          </ul>
+      
     </div>
     </nav>
 
@@ -76,20 +68,18 @@ require 'config.php';
       <article class="col-1 mt-4">
 
 <?php
-        //performs a query on the genre and movies tables to select all information
-        $query = "SELECT * ";
-        $query .= "FROM tipping JOIN     ";
         
-//still yet to fill in the details waiting for database to be built.//
-        $query .= " ORDER BY genre, title";
-        $result = mysqli_query($connection, $query);
+       $query = "SELECT * ";
+       $query .= "FROM aussie_tipping ON Sports_Round_Matches = match_id";
+       $query .= " ORDER BY match_id";
+       $result = mysqli_query($connection, $query);
 
         //performs a while loop on the returned data
-        while($row = mysqli_fetch_assoc($result)){
+       while($row = mysqli_fetch_assoc($result)){
         
   
      
-       echo "<h3 id={$row['date_played']}>";
+       echo "<h3 id={$row['fixture_day']}>";
 ?>
 <!--creates nested columns-->
       </article>
@@ -98,16 +88,16 @@ require 'config.php';
 
 <?php
 
-                   echo "<p>{$row['hometeam']}</p>";
+                   echo "<p>{$row['Home_Team_id']}</p>";
 
 ?>
 
-              </div>   
-              <div class="col-2">
+            <!--  </div>   
+              <div class="col-2"> -->
          
 <?php         
          
-                   echo "<img src=" . $row['icon'] . " alt='team icon'>";   
+               //    echo "<img src=" . $row['icon'] . " alt='team icon'>";   
      
 ?>
      
@@ -115,15 +105,15 @@ require 'config.php';
               <div class="col-3 mt-4">
 <?php
 
-                   echo "<p>{$row['awayteam']}</p>";
+                   echo "<p>{$row['Away_Team_id']}</p>";
             
 ?>            
             
-              </div>   
-              <div class="col-2">
+           <!--   </div>   
+              <div class="col-2"> -->
             
 <?php            
-                   echo "<img src=" . $row['icon'] . " alt='team icon'>";   
+     //              echo "<img src=" . $row['icon'] . " alt='team icon'>";   
      
 ?>     
               </div>
@@ -132,7 +122,7 @@ require 'config.php';
 <!--end of nested columns-->      
 <?php
 
-                   echo "<p>{$row['venue']}</p>";
+                   echo "<p>{$row['fixture_time']}</p>";
 
         }       
 ?>

@@ -60,7 +60,7 @@ require_once('functions.php');
     </nav>
  </div>
  <main class="bg">
-   <div class="container mt-5 col-6>
+   <div class="container mt-5 col-6">
     <div id="whitebackground">
     <br>
      <h1 class="text-center">Registration</h1>
