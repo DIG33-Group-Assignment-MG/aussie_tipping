@@ -62,17 +62,14 @@ require_once('functions.php');
           </li>
           </ul>
          <a href='registration.php'><button type='button' class='btn btn-primary' id='register_button'>Register</button></a> 
-           
-          <ul>
-             
-                <li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"><i></i></a></li>
-                <li class="dropdown order-1">
-                    <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Login <span class="caret"></span></button>
+         
+         <!--<li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"><i></i></a></li>-->
+           <li class="dropdown order-1">
+                <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Login <span class="caret"></span></button>
                     <ul class="dropdown-menu dropdown-menu-right mt-2">
                        <li class="px-3 py-2">
-                          <div action="/APIs/login_user.php" method="post" id="login_user">
-                           <form class="form" role="form">
-                                <div class="form-group">
+                          <form action="/APIs/login_user.php" method="post" id="login_user">
+                            <div class="form-group">
                                   <label for="username">User Name</label>
                                   <input type="text" class="form-control" name="user_name" autocomplete="username" placeholder="Username">
                                 </div>
@@ -80,14 +77,12 @@ require_once('functions.php');
                                    <label for="InputPassword">Password</label>
                                    <input type="password" class="form-control" name="password" autocomplete="new-password" placeholder="Password" > 
                                </div>
-                                <div class="form-group">
-                                     <button type="submit" name="submit" class="btn btn-primary" id="submit_login">Submit</button>
-                                </div>
-                            </form>
+                                   <button type="submit" name="submit" class="btn btn-primary" id="submit_login">Submit</button>
+                              </form>
                         </li>
                     </ul>
-                </li>
-            </ul>
+                <!--</li>-->
+            
        
         </div>
     </div>

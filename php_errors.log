@@ -36,3 +36,114 @@
 [13-Jan-2019 07:21:26 UTC] PHP Stack trace:
 [13-Jan-2019 07:21:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/create_comp.php:0
 [13-Jan-2019 07:21:26 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/create_comp.php:68
+[19-Jan-2019 04:28:29 UTC] PHP Fatal error:  Call to undefined function getRoundDetails() in /home/ubuntu/workspace/APIs/show_sports_rounds.php on line 96
+[19-Jan-2019 04:28:29 UTC] PHP Stack trace:
+[19-Jan-2019 04:28:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_sports_rounds.php:0
+[19-Jan-2019 04:29:00 UTC] PHP Notice:  Undefined variable: connections in /home/ubuntu/workspace/APIs/show_sports_rounds.php on line 98
+[19-Jan-2019 04:29:00 UTC] PHP Stack trace:
+[19-Jan-2019 04:29:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_sports_rounds.php:0
+[19-Jan-2019 04:29:00 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions.php on line 147
+[19-Jan-2019 04:29:00 UTC] PHP Stack trace:
+[19-Jan-2019 04:29:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_sports_rounds.php:0
+[19-Jan-2019 04:29:00 UTC] PHP   2. getRoundDetails() /home/ubuntu/workspace/APIs/show_sports_rounds.php:98
+[19-Jan-2019 04:29:00 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions.php:147
+[19-Jan-2019 04:29:00 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/functions.php on line 149
+[19-Jan-2019 04:29:00 UTC] PHP Stack trace:
+[19-Jan-2019 04:29:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_sports_rounds.php:0
+[19-Jan-2019 04:29:00 UTC] PHP   2. getRoundDetails() /home/ubuntu/workspace/APIs/show_sports_rounds.php:98
+[19-Jan-2019 04:29:00 UTC] PHP   3. mysqli_fetch_assoc() /home/ubuntu/workspace/functions.php:149
+[19-Jan-2019 04:29:42 UTC] PHP Notice:  Undefined variable: connections in /home/ubuntu/workspace/APIs/show_sports_rounds.php on line 99
+[19-Jan-2019 04:29:42 UTC] PHP Stack trace:
+[19-Jan-2019 04:29:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_sports_rounds.php:0
+[19-Jan-2019 04:29:42 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions.php on line 147
+[19-Jan-2019 04:29:42 UTC] PHP Stack trace:
+[19-Jan-2019 04:29:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_sports_rounds.php:0
+[19-Jan-2019 04:29:42 UTC] PHP   2. getRoundDetails() /home/ubuntu/workspace/APIs/show_sports_rounds.php:99
+[19-Jan-2019 04:29:42 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions.php:147
+[19-Jan-2019 04:29:42 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/functions.php on line 149
+[19-Jan-2019 04:29:42 UTC] PHP Stack trace:
+[19-Jan-2019 04:29:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_sports_rounds.php:0
+[19-Jan-2019 04:29:42 UTC] PHP   2. getRoundDetails() /home/ubuntu/workspace/APIs/show_sports_rounds.php:99
+[19-Jan-2019 04:29:42 UTC] PHP   3. mysqli_fetch_assoc() /home/ubuntu/workspace/functions.php:149
+[19-Jan-2019 04:30:01 UTC] PHP Notice:  Array to string conversion in /home/ubuntu/workspace/APIs/show_sports_rounds.php on line 102
+[19-Jan-2019 04:30:01 UTC] PHP Stack trace:
+[19-Jan-2019 04:30:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_sports_rounds.php:0
+[19-Jan-2019 07:00:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/functions.php on line 191
+[19-Jan-2019 07:00:21 UTC] PHP Stack trace:
+[19-Jan-2019 07:00:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_sports_rounds.php:0
+[19-Jan-2019 07:00:21 UTC] PHP   2. getNumberOfMatchesInRound() /home/ubuntu/workspace/APIs/show_sports_rounds.php:102
+[19-Jan-2019 07:00:21 UTC] PHP   3. mysqli_fetch_assoc() /home/ubuntu/workspace/functions.php:191
+[19-Jan-2019 07:01:23 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/functions.php on line 193
+[19-Jan-2019 07:01:23 UTC] PHP Stack trace:
+[19-Jan-2019 07:01:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_sports_rounds.php:0
+[19-Jan-2019 07:01:23 UTC] PHP   2. getNumberOfMatchesInRound() /home/ubuntu/workspace/APIs/show_sports_rounds.php:102
+[19-Jan-2019 07:01:23 UTC] PHP   3. mysqli_fetch_assoc() /home/ubuntu/workspace/functions.php:193
+[19-Jan-2019 07:02:52 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/functions.php on line 193
+[19-Jan-2019 07:02:52 UTC] PHP Stack trace:
+[19-Jan-2019 07:02:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_sports_rounds.php:0
+[19-Jan-2019 07:02:52 UTC] PHP   2. getNumberOfMatchesInRound() /home/ubuntu/workspace/APIs/show_sports_rounds.php:102
+[19-Jan-2019 07:02:52 UTC] PHP   3. mysqli_fetch_assoc() /home/ubuntu/workspace/functions.php:193
+[19-Jan-2019 09:16:59 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/APIs/get_sports_list.php on line 49
+[19-Jan-2019 09:37:06 UTC] PHP Notice:  Undefined variable: X in /home/ubuntu/workspace/APIs/get_sports_list.php on line 32
+[19-Jan-2019 09:37:06 UTC] PHP Stack trace:
+[19-Jan-2019 09:37:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/get_sports_list.php:0
+[20-Jan-2019 02:00:58 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/APIs/show_sports_rounds.php on line 114
+[20-Jan-2019 02:00:58 UTC] PHP Stack trace:
+[20-Jan-2019 02:00:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_sports_rounds.php:0
+[20-Jan-2019 02:00:58 UTC] PHP   2. mysqli_fetch_assoc() /home/ubuntu/workspace/APIs/show_sports_rounds.php:114
+[20-Jan-2019 02:51:46 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/APIs/show_sports_rounds.php on line 123
+[20-Jan-2019 02:51:46 UTC] PHP Stack trace:
+[20-Jan-2019 02:51:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_sports_rounds.php:0
+[20-Jan-2019 02:51:46 UTC] PHP   2. mysqli_fetch_assoc() /home/ubuntu/workspace/APIs/show_sports_rounds.php:123
+[20-Jan-2019 02:52:48 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/APIs/show_sports_rounds.php on line 123
+[20-Jan-2019 02:52:48 UTC] PHP Stack trace:
+[20-Jan-2019 02:52:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_sports_rounds.php:0
+[20-Jan-2019 02:52:48 UTC] PHP   2. mysqli_fetch_assoc() /home/ubuntu/workspace/APIs/show_sports_rounds.php:123
+[20-Jan-2019 02:52:54 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/APIs/show_sports_rounds.php on line 123
+[20-Jan-2019 02:52:54 UTC] PHP Stack trace:
+[20-Jan-2019 02:52:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_sports_rounds.php:0
+[20-Jan-2019 02:52:54 UTC] PHP   2. mysqli_fetch_assoc() /home/ubuntu/workspace/APIs/show_sports_rounds.php:123
+[20-Jan-2019 02:54:23 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/APIs/show_sports_rounds.php on line 123
+[20-Jan-2019 02:54:23 UTC] PHP Stack trace:
+[20-Jan-2019 02:54:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_sports_rounds.php:0
+[20-Jan-2019 02:54:23 UTC] PHP   2. mysqli_fetch_assoc() /home/ubuntu/workspace/APIs/show_sports_rounds.php:123
+[20-Jan-2019 03:49:16 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/APIs/show_matches.php on line 56
+[20-Jan-2019 03:49:16 UTC] PHP Stack trace:
+[20-Jan-2019 03:49:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_matches.php:0
+[20-Jan-2019 03:49:16 UTC] PHP   2. mysqli_fetch_assoc() /home/ubuntu/workspace/APIs/show_matches.php:56
+[20-Jan-2019 03:49:34 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/APIs/show_matches.php on line 56
+[20-Jan-2019 03:49:34 UTC] PHP Stack trace:
+[20-Jan-2019 03:49:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_matches.php:0
+[20-Jan-2019 03:49:34 UTC] PHP   2. mysqli_fetch_assoc() /home/ubuntu/workspace/APIs/show_matches.php:56
+[20-Jan-2019 03:50:52 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/APIs/show_matches.php on line 56
+[20-Jan-2019 03:50:52 UTC] PHP Stack trace:
+[20-Jan-2019 03:50:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_matches.php:0
+[20-Jan-2019 03:50:52 UTC] PHP   2. mysqli_fetch_assoc() /home/ubuntu/workspace/APIs/show_matches.php:56
+[20-Jan-2019 03:53:18 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/APIs/show_matches.php on line 71
+[20-Jan-2019 03:53:18 UTC] PHP Stack trace:
+[20-Jan-2019 03:53:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_matches.php:0
+[20-Jan-2019 03:53:18 UTC] PHP   2. mysqli_fetch_assoc() /home/ubuntu/workspace/APIs/show_matches.php:71
+[20-Jan-2019 03:53:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/APIs/show_matches.php on line 71
+[20-Jan-2019 03:53:37 UTC] PHP Stack trace:
+[20-Jan-2019 03:53:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_matches.php:0
+[20-Jan-2019 03:53:37 UTC] PHP   2. mysqli_fetch_assoc() /home/ubuntu/workspace/APIs/show_matches.php:71
+[20-Jan-2019 03:54:09 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/APIs/show_matches.php on line 71
+[20-Jan-2019 03:54:09 UTC] PHP Stack trace:
+[20-Jan-2019 03:54:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_matches.php:0
+[20-Jan-2019 03:54:09 UTC] PHP   2. mysqli_fetch_assoc() /home/ubuntu/workspace/APIs/show_matches.php:71
+[20-Jan-2019 03:56:16 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/APIs/show_matches.php on line 71
+[20-Jan-2019 03:56:16 UTC] PHP Stack trace:
+[20-Jan-2019 03:56:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_matches.php:0
+[20-Jan-2019 03:56:16 UTC] PHP   2. mysqli_fetch_assoc() /home/ubuntu/workspace/APIs/show_matches.php:71
+[20-Jan-2019 04:05:30 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/APIs/show_matches.php on line 71
+[20-Jan-2019 04:05:30 UTC] PHP Stack trace:
+[20-Jan-2019 04:05:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_matches.php:0
+[20-Jan-2019 04:05:30 UTC] PHP   2. mysqli_fetch_assoc() /home/ubuntu/workspace/APIs/show_matches.php:71
+[20-Jan-2019 04:06:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/APIs/show_matches.php on line 71
+[20-Jan-2019 04:06:37 UTC] PHP Stack trace:
+[20-Jan-2019 04:06:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_matches.php:0
+[20-Jan-2019 04:06:37 UTC] PHP   2. mysqli_fetch_assoc() /home/ubuntu/workspace/APIs/show_matches.php:71
+[20-Jan-2019 04:06:54 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/APIs/show_matches.php on line 71
+[20-Jan-2019 04:06:54 UTC] PHP Stack trace:
+[20-Jan-2019 04:06:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/show_matches.php:0
+[20-Jan-2019 04:06:54 UTC] PHP   2. mysqli_fetch_assoc() /home/ubuntu/workspace/APIs/show_matches.php:71

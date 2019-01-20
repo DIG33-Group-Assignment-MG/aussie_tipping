@@ -137,5 +137,77 @@ function getCompsForUser($userid,$connection)
 	
 }
 
+function getRoundDetails($sport,$round,$connection)
+{
+	//to keep it simple we will request 1 round at a time for now
+	$query = "SELECT * ";
+	$query .=" FROM Sport_Round ";
+	$query .="WHERE sport_round_id='$round' AND sport_id='$sport'";
+	
+	$result = mysqli_query($connection,$query);
+	
+	$row = mysqli_fetch_assoc($result);
+	
+	return $row;
+
+}
+
+function getRoundMatches($sport,$round,$connection)
+{
+	$sql = "SELECT Sports_Round_Matches.match_id,Sports_Round_Matches.sport_round_id,Sports_Round_Matches.Home_Team_ID,Sports_Round_Matches.Away_Team_ID,Sports_Round_Matches.fixture_day,Sports_Round_Matches.fixture_time,Sports_Round_Matches.Result,Sports_Round_Matches.Closing_Date,Sport_Round.sport_id\n"
+    . "FROM Sports_Round_Matches \n"
+    . "INNER JOIN Sport_Round \n"
+    . "ON Sports_Round_Matches.sport_round_id = Sport_Round.sport_round_id\n"
+    . "WHERE Sports_Round_Matches.sport_round_id=1 AND Sport_Round.sport_id=1 LIMIT 0, 30 ";
+	
+	$result = mysqli_query($connection,$sql);
+	
+	while($row = mysqli_fetch_assoc($result))
+		{
+			
+		echo $row["match_id"];
+		echo $row["sport_round_id"];
+		echo $row["Home_Team_ID"];
+		echo $row["Away_Team_ID"];
+		echo $row["fixture_day"];
+		echo $row["fixture_time"];
+		echo $row["Result"];
+		echo $row["Closing_Date"];
+		echo $row["sport_id"];
+			
+		}
+	
+	
+}
+
+
+function getNumberOfMatchesInRound($sport,$round,$connection)
+{
+	
+	$query = "SELECT COUNT(sport_round_id) AS 'num_of_matches'";
+	$query .=" FROM Sports_Round_Matches ";
+	$query .="WHERE sport_round_id='$round' AND sport_id='$sport'";
+	
+	$result = mysqli_query($connection,$query);
+	
+	$row = mysqli_fetch_assoc($result);
+	
+	return $row['num_of_matches'];
+
+}
+
+function getTeamName($teamid,$connection)
+{
+	$query = "SELECT team_name";
+	$query .=" FROM Teams";
+	$query .=" WHERE team_id = $teamid";
+	
+	$result = mysqli_query($connection,$query);
+	
+	$row = mysqli_fetch_assoc($result);
+	
+	return $row['team_name'];
+	
+}
 
 ?>
