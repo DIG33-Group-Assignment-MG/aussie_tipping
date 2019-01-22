@@ -21,14 +21,6 @@
     font-size: 80px;
 }
 
-/*main{
-    /*background-image: url('/img/crowd-1584115__340.jpg');*/
-    
-   /* min-height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-   
-}*/
 .bg { 
  
   background-image: url('/images/background-crowd.png');
@@ -52,8 +44,6 @@ body, html {
   
 }
 
-
-
 #whitebackground{
     background-color: white;
     border-color:black;
@@ -61,7 +51,7 @@ body, html {
    
 }
 
-#tippingcontainer{
-    margin-left: 400px;
-    width: 50%;
+.tip{
+    font-size:20px;
 }
+

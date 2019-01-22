@@ -20,7 +20,7 @@ require 'config.php';
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Custom styles for this site -->
-    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="/css/styles2.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
@@ -50,18 +50,24 @@ require 'config.php';
 
     <h1 class="mt-5 text-center">Tipping</h1>
    <img src="/images/bbl.png" width="100"> 
-   <h3>Competition Name (placeholder)</h3>
-   <h4>Round placeholder</h4>
+ 
   
    <div class="row">
         <div class="container col-md-3 order-2">
       <img src="images/horselagerpromo.png">
       
   </div>
+  
  <div class="container col-md-4">
+   <h3>Competition Name (placeholder)</h3>
+   <h4>Round 1</h4>
+   </div>
+  </div>
+   <div class="container col-4-sm">
+   
      <form>
        <form>
-       <p>Date Venue</p><p><label class="form-check-label-inline" for="winner">
+       <h5>Date Venue</h5><p class="tip"><label class="form-check-label-inline" for="winner">
      <input class="form-check-input" type="radio" name="winner" id="winner" value="option1"><img src="images/renegades.png"> Hometeam
     </label>
     VS
@@ -70,8 +76,9 @@ require 'config.php';
       Awayteam <input class="form-check-input-inline" type="radio" name="winner" id="winner" value="option2">
       </label></p>
       </form>
+      <hr>
        <form>
-        <p>Date Venue</p><p><label class="form-check-label-inline" for="winner">
+        <h5>Date Venue</h5><p class="tip"><label class="form-check-label-inline" for="winner">
      <input class="form-check-input" type="radio" name="winner" id="winner" value="option3"><img src="images/hurricanes.png"> Hometeam
     </label>
     VS
@@ -80,8 +87,9 @@ require 'config.php';
       Awayteam <input class="form-check-input-inline" type="radio" name="winner" id="winner" value="option4">
       </label></p>
       </form>
+      <hr>
       <from>
-        <p>Date Venue</p><p></p><label class="form-check-label-inline" for="winner">
+        <h5>Date Venue</h5><p class="tip"><label class="form-check-label-inline" for="winner">
      <input class="form-check-input" type="radio" name="winner" id="winner" value="option5"><img src="images/hurricanes.png"> Hometeam
     </label>
     VS
@@ -90,8 +98,9 @@ require 'config.php';
       Awayteam <input class="form-check-input-inline" type="radio" name="winner" id="winner" value="option6">
       </label></p>
       </form>
+      <hr>
       <form>
-     <p>Date Venue</p> <label class="form-check-label-inline" for="winner">
+     <h5>Date Venue</h5><p class="tip"><label class="form-check-label-inline" for="winner">
      <input class="form-check-input" type="radio" name="winner" id="winner" value="option7"><img src="images/sixers.png"> Hometeam
     </label>
     VS
