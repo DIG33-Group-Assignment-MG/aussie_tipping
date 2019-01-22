@@ -46,13 +46,9 @@ require_once('functions.php');
            <li class="nav-item">
             <a class="nav-link" href="sports.php">Sports</a>
          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.php">Contact Us</a>
-         </li>
+          
           </ul>
-        <a href='registration.php'><button type='button' class='btn btn-primary' id='register_button'>Register</button></a> 
-        <button type="button" class="btn btn-secondary">Login</button>
-  
+      
     </div>
     </nav>
  </div>

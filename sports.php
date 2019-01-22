@@ -10,7 +10,6 @@ session_destroy();
 require_once('config.php');
 //then run the functions script
 require_once('functions.php');
-
 ?>
 
 <doctype html>
@@ -60,8 +59,7 @@ require_once('functions.php');
           </ul>
         </div>
          </div>
-           <a href='registration.php'><button type='button' class='btn btn-primary' id='register_button'>Register</button></a> 
-         <a href='login.php'><button type='button' class='btn btn-primary' id='login_button'>Login In</button></a> 
+           
     </nav>
     <main class="bg">
     <div role="main" class="container mt-4">
