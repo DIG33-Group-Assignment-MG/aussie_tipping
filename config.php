@@ -14,7 +14,6 @@ error_reporting(E_ALL);
 // MySQL database settings
 //$dbhost = "localhost";
 //Michael DB Config
-<<<<<<< HEAD
 $dbhost = "127.0.0.1";
 $dbuser = "michaeldavidsond";
 $dbpass = "";
@@ -25,19 +24,8 @@ $dbname = "Aussie_Tipping";
 // $dbuser = "grahamclements";
 // $dbpass = "";
 // $dbname = "aussie_tipping";
-=======
-//$dbhost = "127.0.0.1";
-//$dbuser = "michaeldavidsond";
-//$dbpass = "";
-//$dbname = "Aussie_Tipping";
 
-//Grahams DB Config
-$dbhost = "localhost";
-$dbuser = "grahamclements";
-$dbpass = "";
-$dbname = "aussie_tipping";
->>>>>>> 0870a14b8d97d83e3d92dc5c7d1da1e29ac22733
- 
+
 
 // MySQL connection
 $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
