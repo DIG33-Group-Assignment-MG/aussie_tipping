@@ -60,3 +60,8 @@ body, html {
     border-radius:5px;
    
 }
+
+#tippingcontainer{
+    margin-left: 400px;
+    width: 50%;
+}

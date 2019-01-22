@@ -49,12 +49,11 @@ require_once('functions.php');
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-           <li class="nav-item">
-            <a class="nav-link" href="sports.php">Sports</a>
+          
          
           </ul>
        
-        <button type="button" class="btn btn-secondary">Login</button>
+       
   
     </div>
     </nav>

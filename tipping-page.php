@@ -20,7 +20,7 @@ require 'config.php';
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Custom styles for this site -->
-    <link href="/css/styles2.css" rel="stylesheet" type="text/css">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
@@ -45,13 +45,81 @@ require 'config.php';
    <main class=bg>
        
    
-  <div class="container" id="whitebackground">
+  <div class="container col-12" id="whitebackground">
 
 
-<!-- ROW 1 -->
-    <h1 class="mt-5">Tipping</h1>
-   <p>(Placeholder for Tipping)</p>
-
+    <h1 class="mt-5 text-center">Tipping</h1>
+   <img src="/images/bbl.png" width="100"> 
+   <h3>Competition Name (placeholder)</h3>
+   <h4>Round placeholder</h4>
+  
+   <div class="row">
+        <div class="container col-md-3 order-2">
+      <img src="images/horselagerpromo.png">
+      
+  </div>
+ <div class="container col-md-4">
+     <form>
+       <form>
+       <p>Date Venue</p><p><label class="form-check-label-inline" for="winner">
+     <input class="form-check-input" type="radio" name="winner" id="winner" value="option1"><img src="images/renegades.png"> Hometeam
+    </label>
+    VS
+     <label class="form-check-label-inline" for="winner">
+      <img src="images/strikers.png"> 
+      Awayteam <input class="form-check-input-inline" type="radio" name="winner" id="winner" value="option2">
+      </label></p>
+      </form>
+       <form>
+        <p>Date Venue</p><p><label class="form-check-label-inline" for="winner">
+     <input class="form-check-input" type="radio" name="winner" id="winner" value="option3"><img src="images/hurricanes.png"> Hometeam
+    </label>
+    VS
+     <label class="form-check-label-inline" for="winner">
+      <img src="images/heat.png"> 
+      Awayteam <input class="form-check-input-inline" type="radio" name="winner" id="winner" value="option4">
+      </label></p>
+      </form>
+      <from>
+        <p>Date Venue</p><p></p><label class="form-check-label-inline" for="winner">
+     <input class="form-check-input" type="radio" name="winner" id="winner" value="option5"><img src="images/hurricanes.png"> Hometeam
+    </label>
+    VS
+     <label class="form-check-label-inline" for="winner"> 
+      <img src="images/stars.png"> 
+      Awayteam <input class="form-check-input-inline" type="radio" name="winner" id="winner" value="option6">
+      </label></p>
+      </form>
+      <form>
+     <p>Date Venue</p> <label class="form-check-label-inline" for="winner">
+     <input class="form-check-input" type="radio" name="winner" id="winner" value="option7"><img src="images/sixers.png"> Hometeam
+    </label>
+    VS
+    <label class="form-check-label-inline" for="winner">
+      <img src="images/thunder.png"> 
+      Awayteam <input class="form-check-input-inline" type="radio" name="winner" id="winner" value="option8">
+      </label>
+     </form>
+   <button type="submit" name="submit"  class="btn btn-primary btn-center" id="submit">Enter Picks</button></button>
+  </form>  
+  </div>
+ 
+     </div>
+     </div>
+     </main>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+  
+   
 
 
     <!-- Bootstrap core JavaScript

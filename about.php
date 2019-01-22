@@ -46,9 +46,7 @@ require_once('functions.php');
            <li class="nav-item">
             <a class="nav-link" href="sports.php">Sports</a>
          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.php">Contact Us</a>
-         </li>
+          
           </ul>
       
     </div>
