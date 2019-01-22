@@ -259,3 +259,6 @@
 [20-Jan-2019 19:46:09 UTC] PHP Stack trace:
 [20-Jan-2019 19:46:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/login_user.php:0
 [20-Jan-2019 19:46:09 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/APIs/login_user.php:54
+[22-Jan-2019 12:06:34 UTC] PHP Notice:  Array to string conversion in /home/ubuntu/workspace/APIs/login_user.php on line 33
+[22-Jan-2019 12:06:34 UTC] PHP Stack trace:
+[22-Jan-2019 12:06:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/login_user.php:0
