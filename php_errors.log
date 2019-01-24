@@ -337,3 +337,9 @@
 [23-Jan-2019 20:58:42 UTC] PHP Notice:  Array to string conversion in /home/ubuntu/workspace/APIs/login_user.php on line 33
 [23-Jan-2019 20:58:42 UTC] PHP Stack trace:
 [23-Jan-2019 20:58:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/login_user.php:0
+[24-Jan-2019 07:07:15 UTC] PHP Notice:  Array to string conversion in /home/ubuntu/workspace/APIs/login_user.php on line 33
+[24-Jan-2019 07:07:15 UTC] PHP Stack trace:
+[24-Jan-2019 07:07:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/login_user.php:0
+[24-Jan-2019 07:07:23 UTC] PHP Notice:  Array to string conversion in /home/ubuntu/workspace/APIs/login_user.php on line 33
+[24-Jan-2019 07:07:23 UTC] PHP Stack trace:
+[24-Jan-2019 07:07:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/login_user.php:0

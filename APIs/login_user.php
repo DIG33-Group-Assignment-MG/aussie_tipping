@@ -30,7 +30,7 @@ $json = array(
     'reason' => 'error',
     'username' => Null
     );
-print $json;
+
 //check if values are set, if no values are set return false
 if(!isset($_POST['user_name'],$_POST['password']))
     {

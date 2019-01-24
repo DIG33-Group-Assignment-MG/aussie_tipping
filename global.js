@@ -102,7 +102,7 @@ $('#login_user').on('submit',function(){
         type:'post',
         data:loginContent,
         success:function(data){
-            if(data.success)
+            if(data.success=true)
             {
                 //alert('Welcome back ' + data.username)
                 //Redirect them to their member page
