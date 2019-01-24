@@ -23,7 +23,7 @@ $('#register').on('submit',function(){
             
                 //alert('Welcome aboard ' + data.username)
                 //Redirect them to their member page
-                window.location.href = 'Member.php?id='+data.userid;
+                window.location.href = 'members-page.php?id='+data.userid;
                 
                 
             }

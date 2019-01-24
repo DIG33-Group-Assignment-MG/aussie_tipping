@@ -64,7 +64,7 @@ require 'config.php';
    </div>
   </div>
    <div class="container col-4-sm">
-   
+   gi
      <form>
        <form>
        <h5>Date Venue</h5><p class="tip"><label class="form-check-label-inline" for="winner">
