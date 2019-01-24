@@ -6,10 +6,9 @@
 // Error reporting
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
-// MySQL database settings
-//$dbhost = "localhost";
+
+
 //Michael DB Config
-<<<<<<< HEAD
 $dbhost = "127.0.0.1";
 $dbuser = "michaeldavidsond";
 $dbpass = "";
@@ -20,18 +19,6 @@ $dbname = "Aussie_Tipping";
 // $dbuser = "grahamclements";
 // $dbpass = "";
 // $dbname = "aussie_tipping";
-
-=======
-//$dbhost = "127.0.0.1";
-//$dbuser = "michaeldavidsond";
-//$dbpass = "";
-//$dbname = "Aussie_Tipping";
-//Grahams DB Config
- $dbhost = "localhost";
- $dbuser = "grahamclements";
- $dbpass = "";
- $dbname = "aussie_tipping";
->>>>>>> 02c4794da01a1c798cfd92f224872ae58311c9e7
 
 
 // MySQL connection
