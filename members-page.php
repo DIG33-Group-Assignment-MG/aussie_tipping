@@ -122,8 +122,7 @@ There will be an accept button and a decline button next to each row  of user
       <article>
       <!--placeholder for players status-->
       <h5>Player Status (Placeholder)</h5>
-      
-      <p>You have picked (number variable) of winners and are (position variable) in your competition.</p>
+      <p><?php echo "<a class='nav-link' text-color='black' href='members-page.php' id='user_link'>{$_SESSION['user']}</a>picked (number variable) of winners and are (position variable) in your competition.</p>";?>
       
       <!--placeholder for last round results with red cross or green arrow according to whether the player choose picked correctly-->
       <h5>Results Last Round (Placeholder)</h5>
@@ -136,13 +135,23 @@ There will be an accept button and a decline button next to each row  of user
     <div class="col-4">
       <!--placeholder for competition ladder-->
       <h4 class="text-center">Competition Ladder (Placeholder) </h4>
-      <h5>Rank |     Name     | Score</h5>
-      
-      
-      
-      
-    </div>
-    </div> <!--row -->
+     <table class="table table-responsive">
+  <thead class="thead-light"><tr><th scope="col">Rank</th><th scope="col">Username</th><th scope="col">Points</th><th scope="col"></th></tr></thead>
+  <tbody>
+    <tr><th scope="row">1</th><td> <?php echo "{$_SESSION['user']}";?></td><td>200</td></tr>
+      <tr><th scope="row">2</th><td>Graham</td><td>199</td></tr>
+      <tr><th scope="row">3</th><td>Michael</td><td>70</td></tr>
+      <tr><th scope="row">4</th><td>Sarah</td><td>53</td></tr>
+      <tr><th scope="row">4</th><td>King</td><td>48</td></tr>
+      <tr><th scope="row">6</th><td>Massive</td><td>45</td></tr>
+      <tr><th scope="row">7</th><td>Dingdong</td><td>44</td></tr>
+      <tr><th scope="row">8</th><td>Josh</td><td>43</td></tr>
+      <tr><th scope="row">9</th><td>Wemdh</td><td>42</td></tr>
+      <tr><th scope="row">10</th><td>Magpie</td><td>0</td></tr>
+     
+  
+  </tbody>
+</table>
     </div> <!--container-->
       
 <hr>
@@ -205,10 +214,13 @@ There will be an accept button and a decline button next to each row  of user
  <div class="container">
   <div class="row">
   <div class="col-sm-6">
-  <h2 class="text-center">Administration</h2>
-  <h5>Name | Username</h5>
-  </div>
-  <div class="col-2 mt-5">
+ 
+  
+ <p>Allow or delete those who want to joing your competion.</p> 
+  <label><h4>Administration</h4><label>
+    <p>Username</p>
+    <?php echo "{$_SESSION['user']}";?>
+ 
   <button type="submit"  name="allow" class="btn btn-primary" id="join_comp">Allow</button>
   <button type="submit"  name="delete" class="btn btn-primary" id="join_comp">Delete</button>
   </div>
