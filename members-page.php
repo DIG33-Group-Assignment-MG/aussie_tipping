@@ -96,8 +96,7 @@ There will be an accept button and a decline button next to each row  of user
   <div class="container" id="Members_Page">
   <div class="row">
    <div class="col-md-8">
-    <p class="text-center">This is your Members home page. From here you can view a list of all of your tipping competitions</p>
-    <p class="text-center"> as well view a snapshot of your results, the next round's schedule or the current rounds matches</p>
+    <p>This is your Members home page. From here you can view a list of all of your tipping competitions as well view a snapshot of your results, the next round's schedule or the current rounds matches</p>
     </br>
     <label><h4>Select a Competition</h4></label>
     <!-- here we want a list of competitions the member is enrolled in **Complete**-->
@@ -122,11 +121,11 @@ There will be an accept button and a decline button next to each row  of user
       <article>
       <!--placeholder for players status-->
       <h5>Player Status (Placeholder)</h5>
-      <p><?php echo "<a class='nav-link' text-color='black' href='members-page.php' id='user_link'>{$_SESSION['user']}</a>picked (number variable) of winners and are (position variable) in your competition.</p>";?>
+      <p><?php echo "{$_SESSION['user']} picked (number variable) of winners and is currenty (position variable) in your competition.</p>";?>
       
       <!--placeholder for last round results with red cross or green arrow according to whether the player choose picked correctly-->
       <h5>Results Last Round (Placeholder)</h5>
-      
+       <p><?php echo "{$_SESSION['user']} picked (number variable) of winners in the last round";?>
       <!--placeholder for the games season fixture-->
       <h5>Games Schedule (Placeholder)</h5>
       </article>
@@ -212,19 +211,20 @@ There will be an accept button and a decline button next to each row  of user
  <hr>
  
  <div class="container">
-  <div class="row">
   <div class="col-sm-6">
  
   
- <p>Allow or delete those who want to joing your competion.</p> 
-  <label><h4>Administration</h4><label>
+
+  <label><h4>Administration (placeholder)</h4><label>
+      <p>Allow or delete those who want to join your competition.</p> 
     <p>Username</p>
     <?php echo "{$_SESSION['user']}";?>
  
   <button type="submit"  name="allow" class="btn btn-primary" id="join_comp">Allow</button>
   <button type="submit"  name="delete" class="btn btn-primary" id="join_comp">Delete</button>
   </div>
-</div><!--row-->
+  <a href="#Members_Title">back to top</a>
+</div>
 </div><!--container-->
 </main>
  
