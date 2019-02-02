@@ -10,9 +10,8 @@
 */    
 
 session_start();
-$userid =$_SESSION['userid'];
 header('Content-type:text/javascript');
-require '../config.php';
+require_once ('../config.php');
 require_once('../functions.php');
 //This will return a list of the Sports available and 
 

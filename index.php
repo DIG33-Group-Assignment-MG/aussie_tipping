@@ -92,7 +92,7 @@ require_once('functions.php');
    
     <div class="mt-4">
       <br>
-       <p class="homepageheading text-center">Aussie Tipping</p>
+      
        <h1 class="text-center" id="mainheading">Free Sports Tipping.</h1> 
      </div>
     <div class="content container-fluid mt-5">
@@ -105,13 +105,13 @@ require_once('functions.php');
           <section class="col-sm-4">
             <div class="carousel" id="homepagecarousel" data-ride="carousel">
                <a href="sports.php"><div class="carousel-item active"></a>
-                <img class="img-fluid" src="images/Site/afl.png" alt="afl logo">
+                <img class="img-fluid" src="images/Sports/AFL/afl.png" alt="afl logo">
               </div>
               <div class="carousel-item">
-                <a href="sports.php"><img class="img-fluid" src="images/Site/bbl.png" alt="big bash league logo"></a>
+                <a href="sports.php"><img class="img-fluid" src="images/Sports/BBL/bbl.png" alt="big bash league logo"></a>
               </div>
               <div class="carousel-item">
-                <a href="sports.php"> <img class="img-fluid" src="images/Site/nrl.png" alt="nrl logo"></a>
+                <a href="sports.php"> <img class="img-fluid" src="images/Sports/NRL/nrl.png" alt="nrl logo"></a>
               </div>
               <a class="carousel-control-prev" href="#homepagecarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true">

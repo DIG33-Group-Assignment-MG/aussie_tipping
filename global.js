@@ -156,5 +156,7 @@ $('#select_user_competition').change(function(){
 //get me the schedule for the next round
 //GEt me the ladder for comppetition x
 //tas
-    
+
+
+
 })
