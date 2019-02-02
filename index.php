@@ -108,7 +108,7 @@ require_once('functions.php');
                 <img class="img-fluid" src="images/Sports/AFL/afl.png" alt="afl logo">
               </div>
               <div class="carousel-item">
-                <a href="sports.php"><img class="img-fluid" src="images/Sports/BBL/bbl.png" alt="big bash league logo"></a>
+                <a href="sports.php"><img class="img-fluid" src="images/Sports/Big Bash League/bbl.png" alt="big bash league logo"></a>
               </div>
               <div class="carousel-item">
                 <a href="sports.php"> <img class="img-fluid" src="images/Sports/NRL/nrl.png" alt="nrl logo"></a>

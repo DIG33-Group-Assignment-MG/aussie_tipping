@@ -49,12 +49,12 @@ require 'config.php';
 
 
     <h1 class="mt-5 text-center">Tipping</h1>
-   <img src="/images/bbl.png" width="100"> 
+   <img src="/images/Sports/Big Bash League/bbl.png" width="100"> 
  
   
    <div class="row">
         <div class="container col-md-3 order-2">
-      <img src="images/horselagerpromo.png">
+      <img src="images/Site/horselagerpromo.png">
       
   </div>
   
@@ -64,48 +64,47 @@ require 'config.php';
    </div>
   </div>
    <div class="container col-4-sm">
-   gi
-     <form>
+      <form>
        <form>
        <h5>Date Venue</h5><p class="tip"><label class="form-check-label-inline" for="winner">
-     <input class="form-check-input" type="radio" name="winner" id="winner" value="option1"><img src="images/renegades.png"> Hometeam
+     <input class="form-check-input" type="radio" name="winner" id="winner" value="option1"><img src="images/Teams/BBL/Renegades.png"> Hometeam
     </label>
     VS
      <label class="form-check-label-inline" for="winner">
-      <img src="images/strikers.png"> 
+      <img src="images/Teams/BBL/Strikers.png"> 
       Awayteam <input class="form-check-input-inline" type="radio" name="winner" id="winner" value="option2">
       </label></p>
       </form>
       <hr>
        <form>
         <h5>Date Venue</h5><p class="tip"><label class="form-check-label-inline" for="winner">
-     <input class="form-check-input" type="radio" name="winner" id="winner" value="option3"><img src="images/hurricanes.png"> Hometeam
+     <input class="form-check-input" type="radio" name="winner" id="winner" value="option3"><img src="images/Teams/BBL/Hurricanes.png"> Hometeam
     </label>
     VS
      <label class="form-check-label-inline" for="winner">
-      <img src="images/heat.png"> 
+      <img src="images/Teams/BBL/Heat.png"> 
       Awayteam <input class="form-check-input-inline" type="radio" name="winner" id="winner" value="option4">
       </label></p>
       </form>
       <hr>
       <from>
         <h5>Date Venue</h5><p class="tip"><label class="form-check-label-inline" for="winner">
-     <input class="form-check-input" type="radio" name="winner" id="winner" value="option5"><img src="images/hurricanes.png"> Hometeam
+     <input class="form-check-input" type="radio" name="winner" id="winner" value="option5"><img src="images/Teams/BBL/Hurricanes.png"> Hometeam
     </label>
     VS
      <label class="form-check-label-inline" for="winner"> 
-      <img src="images/stars.png"> 
+      <img src="images/Teams/BBL/Stars.png"> 
       Awayteam <input class="form-check-input-inline" type="radio" name="winner" id="winner" value="option6">
       </label></p>
       </form>
       <hr>
       <form>
      <h5>Date Venue</h5><p class="tip"><label class="form-check-label-inline" for="winner">
-     <input class="form-check-input" type="radio" name="winner" id="winner" value="option7"><img src="images/sixers.png"> Hometeam
+     <input class="form-check-input" type="radio" name="winner" id="winner" value="option7"><img src="images/Teams/BBL/Sixers.png"> Hometeam
     </label>
     VS
     <label class="form-check-label-inline" for="winner">
-      <img src="images/thunder.png"> 
+      <img src="images/Teams/BBL/Thunder.png"> 
       Awayteam <input class="form-check-input-inline" type="radio" name="winner" id="winner" value="option8">
       </label>
      </form>

@@ -56,7 +56,7 @@ require_once('functions.php');
    <div class="container mt-5">
     <div id="whitebackground">
     <br>
-     <h1 class="text-center" id+"mainheading">About Us</h1>
+     <h1 class="text-center" id="mainheading">About Us</h1>
 
    
  </main>
