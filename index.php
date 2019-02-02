@@ -105,13 +105,13 @@ require_once('functions.php');
           <section class="col-sm-4">
             <div class="carousel" id="homepagecarousel" data-ride="carousel">
                <a href="sports.php"><div class="carousel-item active"></a>
-                <img class="img-fluid" src="images/afl.png" alt="afl logo">
+                <img class="img-fluid" src="images/Site/afl.png" alt="afl logo">
               </div>
               <div class="carousel-item">
-                <a href="sports.php"><img class="img-fluid" src="images/bbl.png" alt="big bash league logo"></a>
+                <a href="sports.php"><img class="img-fluid" src="images/Site/bbl.png" alt="big bash league logo"></a>
               </div>
               <div class="carousel-item">
-                <a href="sports.php"> <img class="img-fluid" src="images/nrl.png" alt="nrl logo"></a>
+                <a href="sports.php"> <img class="img-fluid" src="images/Site/nrl.png" alt="nrl logo"></a>
               </div>
               <a class="carousel-control-prev" href="#homepagecarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true">
@@ -126,7 +126,7 @@ require_once('functions.php');
             </div> <!--end carousel div-->
           </section> <!-- end carousel code-->
           <div class="col-sm-4 mt-4"> <!--horse lager logo-->
-            <img class="img-fluid" src="images/horse.png">
+            <img class="img-fluid" src="images/Site/horse.png">
           </div> <!--end horse lager div-->
      </div> <!--end row-->
      </div> <!--end content container-->

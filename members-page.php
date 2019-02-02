@@ -7,6 +7,7 @@ session_start();
 
 
 
+
 /*this will be the member's "Dashboard" and will comprise of the following "pages" as sections from the proposal:
 -Member's page
 -Competition Page
@@ -117,7 +118,7 @@ There will be an accept button and a decline button next to each row  of user
     <div class="row">
      <div class="col-8">
         <!--placeholder for competition name selected using the above drop down-->
-      <h4 class="text-center">Competition's Name</h4>
+      <h4 class="text-center" id="name_of_competition">Competition's Name</h4>
       <article>
       <!--placeholder for players status-->
       <h5>Player Status (Placeholder)</h5>

@@ -42,7 +42,7 @@ require_once('../functions.php');
 
 //get the id from the request
 //our query should receive a Sport Name **Hardcoded at the moment**
-$sport_id = 2;
+$sport_id = 1;
 //and a season **Hardcoded at the moment**
 $season_year = 2018;
 //our query has to return a list of round objects which contain (sport name, season, round number, start date, end date)

@@ -23,7 +23,7 @@ $('#register').on('submit',function(){
             
                 //alert('Welcome aboard ' + data.username)
                 //Redirect them to their member page
-                window.location.href = 'members-page.php?id='+data.userid;
+                window.location.href = 'members-page.php';
                 
                 
             }
@@ -126,7 +126,9 @@ $('#select_user_competition').change(function(){
     //get the option number which is the tipping comp
     var selection = $("#select_user_competition option:selected").val();
         console.log("Selection changed to " + selection);
+        $('#name_of_competition').replaceWith("tipping compe name goes here");
     //now that I have the selection I can use Ajax to pull the data from the back end
+     //get competition dertails
      $.ajax({
          url:'APIs/get_comp_details.php',
          dataType:'json',
@@ -135,8 +137,9 @@ $('#select_user_competition').change(function(){
          success:function(data){
             if(data.success)
             {
+             
                 
-            }
+            }            
             
             else if(!data.success)
             {
@@ -147,5 +150,8 @@ $('#select_user_competition').change(function(){
     
      });
     return false;     
+//get me the schedule for the next round
+//GEt me the ladder for comppetition x
+//tas
     
 })
