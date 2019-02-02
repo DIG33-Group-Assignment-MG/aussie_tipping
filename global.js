@@ -93,6 +93,7 @@ $('#login_user').on('submit',function(){
     console.log("you clicked the create a comp button");
     var login_form=$(this),
         loginContent=login_form.serialize();
+        
         console.log("here is data from the submit_comp form");
         console.log(loginContent);
         
@@ -102,9 +103,10 @@ $('#login_user').on('submit',function(){
         type:'post',
         data:loginContent,
         success:function(data){
-            if(data.success=true)
+            if(data.success)
             {
-                //alert('Welcome back ' + data.username)
+                
+                alert('Welcome back ' + data.username)
                 //Redirect them to their member page
                 window.location.href = 'members-page.php';
             }
@@ -112,6 +114,7 @@ $('#login_user').on('submit',function(){
             else if(!data.success)
             {
                 alert('Sorry ' + data.reason)
+                return false;
             }
         }
     });

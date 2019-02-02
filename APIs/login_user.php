@@ -31,17 +31,7 @@ $json = array(
     'username' => Null
     );
 
-//check if values are set, if no values are set return false
-if(!isset($_POST['user_name'],$_POST['password']))
-    {
-      $json['success'] = false;
-      $json['reason'] = 'No Data Entered';
-      $json['username'] = Null;
-    }
-    //if there are values
-    else
-    {
-      //assign values to variables
+    //assign values to variables
       $username = $_POST['user_name'];
       $password = $_POST['password'];
      
@@ -66,26 +56,25 @@ if(!isset($_POST['user_name'],$_POST['password']))
 	//other we can take the result and the $row['password'] and compare it to $password
 	else
 	{
-	$row = mysqli_fetch_assoc($result); 
-	if($row['password']==$password)
-	{
-	  //set up JSon response
-	  $json['success'] = true;
-      $json['reason'] = 'Entry is correct';
-      $json['username'] = $username;
+	        $row = mysqli_fetch_assoc($result); 
+	        if($row['password']==$password)
+	        {
+	            //set up JSon response
+	            $json['success'] = true;
+                $json['reason'] = 'Entry is correct';
+                $json['username'] = $username;
       
-      //set up $_SESSION data
-      $_SESSION['user']=$username;
-      $_SESSION['userid']=$row['user_id'];
-	}
-	else
-	{
-	  $json['success'] = false;
-      $json['reason'] = 'Username/Password is incorrect';
-      $json['username'] = Null;
-	}
+                //set up $_SESSION data
+                $_SESSION['user']=$username;
+                $_SESSION['userid']=$row['user_id'];
+	        }
+	        else
+	        {
+	            $json['success'] = false;
+                $json['reason'] = 'Username/Password is incorrect';
+                $json['username'] = Null;
+	        }
 	    
 	}
 	 echo json_encode($json);
 	 die();
-};

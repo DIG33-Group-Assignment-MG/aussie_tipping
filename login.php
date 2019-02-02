@@ -53,23 +53,28 @@ require_once('functions.php');
         </nav>
   <main class="bg">
    <div class="container mt-4 col-4">
-    <div id="whitebackground">
+    <br>
+    <br>
+    <div id="whitebackground-login">
        
          <h1 id="registration_header">Login</h1>
 
 <form action="/APIs/login_user.php" method="post" id="login_user">
   <div class="form-group">
-    <div class="col-10">
+    <div class="col-12">
         <label for="username">User Name</label>
-        <input type="text" class="form-control" name="user_name" autocomplete="username" placeholder="Username" >
+        <input type="text" class="form-control" name="user_name" autocomplete="username" placeholder="Username" required>
+        
     </div>
   </div>
   <div class="form-group">
-    <div class=col-10>
+    <div class=col-12>
         <label for="InputPassword">Password</label>
-        <input type="password" class="form-control" name="password" autocomplete="new-password" placeholder="Password" >
+        <input type="password" class="form-control" name="password" autocomplete="new-password" placeholder="Password" required>
     </div>
-  <button type="submit" name="submit"  class="btn btn-primary" id="submit_login">Submit</button>
+    <br>
+    
+  <button type="submit" name="submit"  class="btn btn-primary" id="submit_login" >Submit</button>
   
 </form>
      </div>
