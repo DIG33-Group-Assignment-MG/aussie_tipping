@@ -1,24 +1,32 @@
 $(document).ready(function(){
 console.log("The sports page has loaded"); 
+    
+   
      //run the get sports list API and store the response in json
      $.getJSON("/APIs/get_sports_list.php",function(json){
+         var url = window.location.href;
+        
+         //var url = 'https://aussie-tipping-workspace-michaeldavidsondig31sp3.c9users.io/sports.php?id=1';
+         var id = url.substring(url.lastIndexOf('=')+1);
          //this can be used to set the sport that is visible
-         //0 NRL , 1 AFL , 2 BBL
-         var sport_id = 2;
+         //1 NRL , 2 AFL , 3 BBL
+         
+         var sports_id = id;
+         var sports_json_id = sports_id-1;
                       
-         $('#mainheading').replaceWith('<h1 class="text-center mt-4" id="mainheading">'+json[sport_id].name+'</h1>');
-         var start_season = new Date(json[sport_id].Season_Start);
-         var end_season = new Date(json[sport_id].Season_End);
+         $('#mainheading').replaceWith('<h1 class="text-center mt-4" id="mainheading">'+json[sports_json_id].name+'</h1>');
+         var start_season = new Date(json[sports_json_id].Season_Start);
+         var end_season = new Date(json[sports_json_id].Season_End);
          var season_start_styled=getSeasonDates(start_season);
         
          var image1="images/Sports/"
          $('#season_start').replaceWith(' <p id="season_start">'+season_start_styled+'</p>');
-         $('#number_of_rounds').replaceWith(' <p id="number_of_rounds">'+json[sport_id].number_of_rounds+'</p>');
+         $('#number_of_rounds').replaceWith(' <p id="number_of_rounds">'+json[sports_json_id].number_of_rounds+'</p>');
          $('#final_date').replaceWith('<p id="final_date">'+season_start_styled+'</p>');
          
-         $("#carousel1").attr("src", "images/Sports/"+json[sport_id].name+"/"+json[sport_id].name+"1.png");
-         $("#carousel2").attr("src", "images/Sports/"+json[sport_id].name+"/"+json[sport_id].name+"2.png");
-         $("#carousel3").attr("src", "images/Sports/"+json[sport_id].name+"/"+json[sport_id].name+"3.png");
+         $("#carousel1").attr("src", "images/Sports/"+json[sports_json_id].name+"/"+json[sports_json_id].name+"1.png");
+         $("#carousel2").attr("src", "images/Sports/"+json[sports_json_id].name+"/"+json[sports_json_id].name+"2.png");
+         $("#carousel3").attr("src", "images/Sports/"+json[sports_json_id].name+"/"+json[sports_json_id].name+"3.png");
      });
 
 

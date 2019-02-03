@@ -48,9 +48,10 @@ require_once('functions.php');
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="sports.php" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sports</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">NRL Tipping</a>
-              <a class="dropdown-item" href="#">AFL Tiiping</a>
-              <a class="dropdown-item" href="#">BBL Tipping</a>
+             <a class="dropdown-item" href="sports.php?id=1">NRL Tipping</a>
+              <a class="dropdown-item" href="sports.php?id=2">AFL Tiiping</a>
+              <a class="dropdown-item" href="sports.php?id=3">BBL Tipping</a>
+            </div>
             </div>
           <li class="nav-item">
             <a class="nav-link" href="about.php">About Us</a>
@@ -63,7 +64,7 @@ require_once('functions.php');
     <main class="bg">
     <div role="main" class="container mt-4">
       <br>
-       <h1 class="text-center mt-4" id="mainheading">Sport</h1>
+       <h1 class="text-center mt-4" id="mainheading"></h1>
     
     
     <div class="content container mt-3">

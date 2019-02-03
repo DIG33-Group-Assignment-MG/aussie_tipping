@@ -47,9 +47,9 @@ require_once('functions.php');
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="sports.php" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sports</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="sports.php">NRL Tipping</a>
-              <a class="dropdown-item" href="sports.php">AFL Tiiping</a>
-              <a class="dropdown-item" href="sports.php">BBL Tipping</a>
+              <a class="dropdown-item" href="sports.php?id=1">NRL Tipping</a>
+              <a class="dropdown-item" href="sports.php?id=2">AFL Tiiping</a>
+              <a class="dropdown-item" href="sports.php?id=3">BBL Tipping</a>
             </div>
           <li class="nav-item">
             <a class="nav-link" href="about.php">About Us</a>
