@@ -52,24 +52,55 @@ require_once('functions.php');
               <a class="dropdown-item" href="sports.php?id=2">AFL Tiiping</a>
               <a class="dropdown-item" href="sports.php?id=3">BBL Tipping</a>
             </div>
-            </div>
+          
           <li class="nav-item">
             <a class="nav-link" href="about.php">About Us</a>
           </li>
          
-        </div>
+         </ul>
+         <img src="images/Site/horse.png" width="40px" height="40px">
+         </div>
          </div>
            
     </nav>
-    <main class="bg">
-    <div role="main" class="container mt-4">
+    <main class="bg2">
+    <div role="main" class="container">
       <br>
-       <h1 class="text-center mt-4" id="mainheading"></h1>
-    
-    
-    <div class="content container mt-3">
-       <div class="row">
-          <div class= "col-sm-6 mt-3" id="whitebackground">
+        <div class="content container mt-5 col-12">
+         
+          <!--carousel code-->
+       
+          <section class="col-sm-12">
+            <div class="carousel" id="sportcarousel" data-ride="carousel">
+                <div class="carousel-item active">
+                <img class="img-fluid" width="100%" src="" alt="sport image" id="carousel1">
+              </div>
+              <div class="carousel-item">
+                <img class="img-fluid" width="100%" src="" alt="sport image" id="carousel2">
+              </div>
+              <div class="carousel-item">
+                <img class="img-fluid" width="100%" src="" alt="sport image" id="carousel3">
+              </div>
+              <a class="carousel-control-prev" href="#sportcarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true">
+                  <span class="sr-only">Previous</span>
+                </span>
+              </a>
+              <a class="carousel-control-next" href="#sportcarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true">
+                  <span class="sr-only">Next</span>
+                </span>
+              </a>
+            </div> <!--end carousel div-->
+            
+          </section> <!-- end carousel code-->
+        
+          <div id="whitebackgroundsport">
+            
+             <img src="" id="logo"> 
+             
+             <h1 class="text-center" id="mainheading" ></h1>
+              
             <h3 >Season Starts:</h3>
             
             <p id="season_start"></p>
@@ -84,34 +115,11 @@ require_once('functions.php');
             
             <a href='registration.php'><button type='button' class='btn btn-primary' id='register_button'>Register</button></a> 
           </div>
-          <!--carousel code-->
-          <section class="col-sm-6">
-            <div class="carousel" id="sportcarousel" data-ride="carousel">
-              <div class="carousel-item active">
-                <img class="img-fluid" src="" alt="Cricketer Ben Cutting" id="carousel1">
-              </div>
-              <div class="carousel-item">
-                <img class="img-fluid" src="" alt="Geelong V Essendon" id="carousel2">
-              </div>
-              <div class="carousel-item">
-                <img class="img-fluid" src="" alt="Broncos" id="carousel3">
-              </div>
-              <a class="carousel-control-prev" href="#sportcarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true">
-                  <span class="sr-only">Previous</span>
-                </span>
-              </a>
-              <a class="carousel-control-next" href="#sportcarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true">
-                  <span class="sr-only">Next</span>
-                </span>
-              </a>
-            </div> <!--end carousel div-->
-          </section> <!-- end carousel code-->
+          </div>
+         
          </div> <!--end content container-->
-    </div>
-    </div>
-    </main><!-- /.container -->
+  
+   </main><!-- /.container -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

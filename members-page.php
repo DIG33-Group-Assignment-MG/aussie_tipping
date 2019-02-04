@@ -81,13 +81,13 @@ There will be an accept button and a decline button next to each row  of user
              <li class="nav-item">
               <a class="nav-link" href="tipping-page.php" target="_blank">Tipping</a>
             </li>
-            
+             
         </ul>
-         <?php echo "<a class='nav-link' href='members-page.php' id='user_link'>Welcome {$_SESSION['user']}</a>";?>
+        <img src="images/Site/horse.png" width="40px" height="40px"> 
       </div>
     </nav>
   
-<main class="bg">
+<main class="bg2">
 <!-- Div 1 Should contain the member's page from the proposal-->
 <div class="container mt-5" id="whitebackground" >
 </br>

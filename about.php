@@ -43,12 +43,9 @@ require_once('functions.php');
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-           <li class="nav-item">
-            <a class="nav-link" href="sports.php">Sports</a>
-         </li>
           
           </ul>
-      
+       <img src="images/Site/horse.png" width="40px" height="40px">
     </div>
     </nav>
  </div>
@@ -57,6 +54,10 @@ require_once('functions.php');
     <div id="whitebackground">
     <br>
      <h1 class="text-center" id="mainheading">About Us</h1>
+     
+     <img src="images/Site/horsedry.png"> 
+     <img src="images/Site/horselime.png">
+     <img src="images/Site/horsecan.png">
 
    
  </main>
