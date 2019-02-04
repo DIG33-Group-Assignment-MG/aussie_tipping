@@ -1,3 +1,4 @@
+
 .btn{
     margin:0px 10px 0px 10px;
     
@@ -24,16 +25,29 @@
 .bg { 
  
   background-image: url('/images/Site/background-crowd.png');
-  /* Full height */
+  /* Full height*/
   height: 100%; 
 
-  /* Center and scale the image nicely */
+  /* Center and scale the image nicely*/ 
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+ 
 }
 
+.bg2 { 
+ /*repeats the background on longer pages */
+  background-image: url('/images/Site/background-crowd.png');
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover;
+ 
+}
 
+#sportcarousel{
+    margin-top: -10px;
+    border-color:black;
+    border-radius:5px;
+}
 
 #navigate{
     visibility: hidden;
@@ -45,9 +59,19 @@ body, html {
 }
 
 #whitebackground{
-    background-color: white;
+    background-color: rgba(256,256,256,0.85);
+    border-color:black;
+    border-radius:20px;
+}
+    
+#whitebackgroundsport{
+    background-color: rgba(256,256,256,0.85);
     border-color:black;
     border-radius:5px;
+    margin-right:12px;
+    margin-left:12px;
+  
+    
    
 }
 

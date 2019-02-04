@@ -52,46 +52,46 @@ require_once('functions.php');
           
          
           </ul>
-       
+       <img src="images/Site/horse.png" width="40px" height="40px"></div>  
        
   
     </div>
     </nav>
  </div>
  <main class="bg">
-  
-    <div id="whitebackground">
-    <br>
-     <h1 class="text-center">Registration</h1>
+   <br>
+  <div class="container mt-5 col-lg-4" >
+    <div id="whitebackground-login">
+       <h1 class="text-center">Registration</h1>
 
     <h2 class="text-center" id="registration_header">New User</h2>
     
     
 
 <form action="/APIs/register.php" method="post" id="register" >
-  <div class="form-group d-flex justify-content-sm-center">
-   
-        <label class="form-control-label" for="full name">Full Name</label>
+  <div class="form-group d-flex justify-content-md-center">
+    <div class="col-lg-12">
+       <label class="form-control-label" for="full name">Full Name</label>
         <input type="text" class="form-control" name="real_name" autocomplete="name"  placeholder="Full Name">
     </div>
-  
-  <div class="form-group d-flex justify-content-sm-center">
-   
+  </div>
+  <div class="form-group d-flex justify-content-md-center">
+    <div class="col-lg-12">
         <label class="form-control-label" for="username">User Name</label>
         <input type="text" class="form-control" name="user_name" autocomplete="username" placeholder="Username" >
     </div>
-  
-  <div class="form-group d-flex justify-content-sm-center">
-  
+   </div>
+  <div class="form-group d-flex justify-content-md-center">
+   <div class="col-lg-12">
         <label class="form-control-label" for="InputPassword">Password</label>
         <input type="password" class="form-control" name="password" autocomplete="new-password" placeholder="Password" >
     </div>
-  
-  <div class="form-group d-flex justify-content-sm-center">
-  
+   </div>
+  <div class="form-group d-flex justify-content-md-center">
+   <div class="col-md-12">
         <label class="form-control-label" for="InputEmail">Email address</label>
         <input type="email" class="form-control" name="email" autocomplete="email" aria-describedby="emailHelp" placeholder="Enter email" value="@email.com">
-  
+   </div>
   </div>
   <div class="text-center">
   <button type="submit" name="submit"  class="btn btn-primary btn-center" id="submit">Submit</button>
@@ -99,9 +99,11 @@ require_once('functions.php');
 </form>
       <!--not sure what this line in the original code does-->
       <a href="index.php" class="btn btn-success" role="button" id="navigate">Successful</button></a>
+ </div>
+</div>
  </main>
 
- </div>
+
 
 
 
