@@ -96,12 +96,16 @@ require_once('functions.php');
           </section> <!-- end carousel code-->
         
           <div id="whitebackgroundsport">
-            
-             <img src="" id="logo"> 
-             
-             <h1 class="text-center" id="mainheading" ></h1>
-              
-            <h3 >Season Starts:</h3>
+             <div class="container">
+          <div class="row">
+           <div>
+         <img class="img-fluid col-3" width="100" src="" alt="sport image" id="sportlogo">
+          </div>
+          <div>
+             <p class="text-center col-9" id="mainheading" ></p>
+            </div>
+            </div>  
+            <h2 >Season Starts</h3>
             
             <p id="season_start"></p>
             
@@ -109,7 +113,7 @@ require_once('functions.php');
             
             <p id="number_of_rounds"></p>
             
-            <h3>Final Date to Join or Create a Competion</h3>
+            <h3>Final Date to Join or Create a Competition</h3>
             
             <p id="final_date"></p>
             
