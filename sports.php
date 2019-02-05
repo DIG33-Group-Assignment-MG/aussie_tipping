@@ -65,11 +65,11 @@ require_once('functions.php');
     </nav>
     <main class="bg2">
     <div role="main" class="container">
-      <br>
-        <div class="content container mt-5 col-12">
+     <br>
+        <div class="content container mt-5 col-10">
          
           <!--carousel code-->
-       
+         <div class="jumbotron">
           <section class="col-sm-12">
             <div class="carousel" id="sportcarousel" data-ride="carousel">
                 <div class="carousel-item active">
@@ -94,7 +94,7 @@ require_once('functions.php');
             </div> <!--end carousel div-->
             
           </section> <!-- end carousel code-->
-        
+      
           <div id="whitebackgroundsport">
              <div class="container">
           <div class="row">
@@ -102,7 +102,7 @@ require_once('functions.php');
          <img class="img-fluid col-3" width="100" src="" alt="sport image" id="sportlogo">
           </div>
           <div>
-             <p class="text-center col-9" id="mainheading" ></p>
+             <p class="text-center col-7" id="mainheading" ></p>
             </div>
             </div>  
             <h2 >Season Starts</h3>
@@ -120,7 +120,7 @@ require_once('functions.php');
             <a href='registration.php'><button type='button' class='btn btn-primary' id='register_button'>Register</button></a> 
           </div>
           </div>
-         
+         </div>
          </div> <!--end content container-->
   
    </main><!-- /.container -->
