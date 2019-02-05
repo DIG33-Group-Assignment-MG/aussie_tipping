@@ -77,6 +77,7 @@ $('#register_comp').on('submit',function(){
                     $('#competition_name').removeClass('form-control');
                     $('#competition_name').addClass('form-control is-invalid');
                     $('<div class="invalid-feedback">This Competition Name exists - Try Again</div>').insertAfter('#competition_name');
+
                      
                 }
             }
@@ -122,6 +123,9 @@ $('#login_user').on('submit',function(){
         
         return false;
 });
+
+
+
 
 //need a function that detects a change in the member's select_competition box
 

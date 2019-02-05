@@ -343,3 +343,17 @@
 [24-Jan-2019 07:07:23 UTC] PHP Notice:  Array to string conversion in /home/ubuntu/workspace/APIs/login_user.php on line 33
 [24-Jan-2019 07:07:23 UTC] PHP Stack trace:
 [24-Jan-2019 07:07:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/login_user.php:0
+[03-Feb-2019 04:56:20 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/ubuntu/workspace/functions.php on line 18
+[03-Feb-2019 04:56:20 UTC] PHP Stack trace:
+[03-Feb-2019 04:56:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/available_to_join.php:0
+[03-Feb-2019 04:56:20 UTC] PHP   2. getTippingCompName() /home/ubuntu/workspace/APIs/available_to_join.php:35
+[03-Feb-2019 04:57:53 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/ubuntu/workspace/functions.php on line 18
+[03-Feb-2019 04:57:53 UTC] PHP Stack trace:
+[03-Feb-2019 04:57:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/available_to_join.php:0
+[03-Feb-2019 04:57:53 UTC] PHP   2. getTippingCompName() /home/ubuntu/workspace/APIs/available_to_join.php:35
+[03-Feb-2019 05:04:39 UTC] PHP Fatal error:  Cannot redeclare getTippingCompName() (previously declared in /home/ubuntu/workspace/APIs/available_to_join.php:46) in /home/ubuntu/workspace/functions.php on line 7
+[03-Feb-2019 05:04:39 UTC] PHP Stack trace:
+[03-Feb-2019 05:04:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/available_to_join.php:0
+[03-Feb-2019 05:05:27 UTC] PHP Fatal error:  Cannot redeclare getTippingCompName() (previously declared in /home/ubuntu/workspace/APIs/available_to_join.php:51) in /home/ubuntu/workspace/functions.php on line 7
+[03-Feb-2019 05:05:27 UTC] PHP Stack trace:
+[03-Feb-2019 05:05:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/APIs/available_to_join.php:0

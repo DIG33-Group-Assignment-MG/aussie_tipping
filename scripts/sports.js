@@ -24,6 +24,7 @@ console.log("The sports page has loaded");
          $('#number_of_rounds').replaceWith(' <p id="number_of_rounds">'+json[sports_json_id].number_of_rounds+'</p>');
          $('#final_date').replaceWith('<p id="final_date">'+season_start_styled+'</p>');
          
+         $("#carousel0").attr("src", "images/Sports/"+json[sports_json_id].name+"/"+json[sports_json_id].name+".png");
          $("#carousel1").attr("src", "images/Sports/"+json[sports_json_id].name+"/"+json[sports_json_id].name+"1.png");
          $("#carousel2").attr("src", "images/Sports/"+json[sports_json_id].name+"/"+json[sports_json_id].name+"2.png");
          $("#carousel3").attr("src", "images/Sports/"+json[sports_json_id].name+"/"+json[sports_json_id].name+"3.png");

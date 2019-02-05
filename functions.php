@@ -3,6 +3,10 @@
 //this file contains functions for the website
 require_once('config.php');
 
+//allwos a simple replacement of the competition ids with competition names
+
+
+
 function checkUserName($username,$connection)
 {
     

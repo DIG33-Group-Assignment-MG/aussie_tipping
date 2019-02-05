@@ -80,9 +80,9 @@ $json = array(
         
             //create a query to INSERT data in to table 'Tipping_Competition_Member'
             //This table has the following columns:
-            $join_comp_query ="INSERT INTO Tipping_Competition_Member (tipping_comp_member_id,user_id,tipping_competition_id,isAdmin)";
+            $join_comp_query ="INSERT INTO Tipping_Competition_Member (tipping_comp_member_id,user_id,tipping_competition_id,isAdmin,hasAccess)";
             $join_comp_query .=" VALUES (";
-            $join_comp_query .=" NULL,'$userid','$tipping_comp_id',1";
+            $join_comp_query .=" NULL,'$userid','$tipping_comp_id',1,'yes'";
             $join_comp_query .=")";
             $join_result = mysqli_query($connection, $join_comp_query);
             
