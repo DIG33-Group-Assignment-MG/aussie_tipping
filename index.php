@@ -93,7 +93,7 @@ require_once('functions.php');
     <div class="mt-4">
       <br>
       
-       <h1 class="text-center" id="mainheading">Free Sports Tipping.</h1> 
+       <h1 class="text-center" id="mainheading2">Free Sports Tipping.</h1> 
      </div>
     <div class="content container-fluid mt-5">
        <div class="row">

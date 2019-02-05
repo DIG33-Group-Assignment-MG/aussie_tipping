@@ -11,11 +11,15 @@
    
 }
 #mainheading{
-    color:white;
+    color:black;
     font-family:cursive;
     
 }
 
+#mainheading2{
+    color:white;
+    font-family:cursive;
+}
 .homwpageheading{
     color: white;
     font-family: cursive; 
