@@ -32,7 +32,7 @@ require_once('functions.php');
     <link href="/css/styles2.css" rel="stylesheet" type="text/css">>
   </head>
 
-  <body>
+  <body class="bg">
  
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container">
@@ -86,7 +86,7 @@ require_once('functions.php');
         </div>
         </nav>
 
-<main class="bg">
+<main>
   <div role="main" class="container">
     
    
@@ -97,12 +97,13 @@ require_once('functions.php');
      </div>
     <div class="content container-fluid mt-5">
        <div class="row">
-          <div class= "maintext col-sm-4 mt-3">
+          <div class= "maintext col-sm-4">
              
-              <p class="text-center text-fluid">Create a tipping competition for you and your mates OR join a tipping competition already started by a mate. Click on a sport's logo to find out about the sports that are available, or register to join.</p>
+              <p class="text-center text-fluid">Create a tipping competition for you and your mates OR join a competition
+              already started by a mate. Click on a sport's logo to find out about the sports that are available, or register to join.</p>
           </div>
           <!--carousel code-->
-          <section class="col-sm-4">
+          <section class="col-sm-4 mt-2">
             <div class="carousel" id="homepagecarousel" data-ride="carousel">
                <a href="sports.php"><div class="carousel-item active"></a>
                 <img class="img-fluid" src="images/Sports/AFL/afl.png" alt="afl logo">
@@ -111,7 +112,7 @@ require_once('functions.php');
                 <a href="sports.php"><img class="img-fluid" src="images/Sports/Big Bash League/bbl.png" alt="big bash league logo"></a>
               </div>
               <div class="carousel-item">
-                <a href="sports.php"> <img class="img-fluid" src="images/Sports/NRL/nrl.png" alt="nrl logo"></a>
+                <a href="sports.php"> <img class="img-fluid" src="images/Sports/NRL/NRL.png" alt="nrl logo"></a>
               </div>
               <a class="carousel-control-prev" href="#homepagecarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true">
@@ -125,14 +126,18 @@ require_once('functions.php');
               </a>
             </div> <!--end carousel div-->
           </section> <!-- end carousel code-->
-          <div class="col-sm-4 mt-4"> <!--horse lager logo-->
+          <div class="col-sm-4 mt-5"> <!--horse lager logo-->
             <img class="img-fluid" src="images/Site/horse.png">
           </div> <!--end horse lager div-->
      </div> <!--end row-->
-     </div> <!--end content container-->
+      </div> <!--end content container-->
     
-    </div>
+  
     </main><!-- /.container -->
+     </div>
+   <div class="footer">
+  <p>&copy; 2019. Contact: info@horselarger.com.</p>
+</div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

@@ -32,7 +32,7 @@ require_once('functions.php');
   </head>
    
 
-  <body>
+  <body class="bg2">
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container">
@@ -63,7 +63,7 @@ require_once('functions.php');
          </div>
            
     </nav>
-    <main class="bg2">
+    <main >
     <div role="main" class="container">
      <br>
         <div class="content container mt-5 col-10">
@@ -132,7 +132,7 @@ require_once('functions.php');
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-     <script src="sports.js"></script>
+     <script src="scripts/sports.js"></script>
   
   </body>
 </html>

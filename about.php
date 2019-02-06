@@ -32,35 +32,48 @@ require_once('functions.php');
     <link href="/css/styles2.css" rel="stylesheet" type="text/css">
   </head>
 
-  <body>
+  <body class="bg2">
   
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container">
      <a class="navbar-brand" href="index.php">Aussie Tipping</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          
-          </ul>
+     
        <img src="images/Site/horse.png" width="40px" height="40px">
     </div>
     </nav>
  </div>
- <main class="bg">
-   <div class="container mt-5">
-    <div id="whitebackground">
+ <main class="bg2">
     <br>
+   <div class="container mt-4">
+    <div id="whitebackground">
+        <div class="jumbotron mt-5">
+   
      <h1 class="text-center" id="mainheading">About Us</h1>
-     
-     <img src="images/Site/horsedry.png"> 
-     <img src="images/Site/horselime.png">
-     <img src="images/Site/horsecan.png">
+     <div class="row">
+     <div class="col-md-4" >
+         
+        <p id="about">We are an international beer brewer that sponsors many large national sporting 
+        codes and events. These include the National Rugby League, Australian Football League
+        and The Big Bash League.</p> 
 
+        <p id="about">Beer and sport go together like beer. Having a beer with your mates and enjoying many
+        of the sports Australia has to offer is a national past time. We have created a free tipping
+        competition for you, be you a loyal customer or a potential future customer. While watching
+        your sport, why not enjoy a Horse beer.</p> 
+
+     </div>
+     <div class="col-md-8">
+         
+     <img class="img-fluid" src="images/Site/horsedry.png"> 
+     <img class="img-fluid" src="images/Site/horselime.png">
+     <img class="img-fluid" src="images/Site/horsecan.png">
+    </div>
+    </div>
    
  </main>
+  <div class="footer">
+  <p>&copy; 2019. Contact: info@horselarger.com.</p>
+</div>
 </div>
  </div>
 

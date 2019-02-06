@@ -43,15 +43,7 @@ require_once('functions.php');
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container">
      <a class="navbar-brand" href="index.php">Aussie Tipping</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          
-         
-          </ul>
+     
        <img src="images/Site/horse.png" width="40px" height="40px"></div>  
        
   
@@ -72,25 +64,25 @@ require_once('functions.php');
   <div class="form-group d-flex justify-content-md-center">
     <div class="col-lg-12">
        <label class="form-control-label" for="full name">Full Name</label>
-        <input type="text" class="form-control" name="real_name" autocomplete="name"  placeholder="Full Name">
+        <input type="text" class="form-control" name="real_name" autocomplete="name"  placeholder="Full Name" required>
     </div>
   </div>
   <div class="form-group d-flex justify-content-md-center">
     <div class="col-lg-12">
         <label class="form-control-label" for="username">User Name</label>
-        <input type="text" class="form-control" name="user_name" autocomplete="username" placeholder="Username" >
+        <input type="text" class="form-control" name="user_name" autocomplete="username" placeholder="Username" required>
     </div>
    </div>
   <div class="form-group d-flex justify-content-md-center">
    <div class="col-lg-12">
         <label class="form-control-label" for="InputPassword">Password</label>
-        <input type="password" class="form-control" name="password" autocomplete="new-password" placeholder="Password" >
+        <input type="password" class="form-control" name="password" autocomplete="new-password" placeholder="Password" required >
     </div>
    </div>
   <div class="form-group d-flex justify-content-md-center">
    <div class="col-md-12">
         <label class="form-control-label" for="InputEmail">Email address</label>
-        <input type="email" class="form-control" name="email" autocomplete="email" aria-describedby="emailHelp" placeholder="Enter email" value="@email.com">
+        <input type="email" class="form-control" name="email" autocomplete="email" aria-describedby="emailHelp" placeholder="Enter email" value="@email.com" required>
    </div>
   </div>
   <div class="text-center">
@@ -102,6 +94,7 @@ require_once('functions.php');
  </div>
 </div>
  </main>
+ 
 
 
 
